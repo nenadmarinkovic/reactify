@@ -32,8 +32,8 @@ function Header({ theme, toggleTheme }) {
                   fill="#FFF"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M31.9055 2.83057C38.2865 6.50738 42.5823 13.3977 42.5823 21.2911C42.5823 29.1845 38.2865 36.0748 31.9055 39.7516C25.5238 36.0752 21.228 29.1849 21.228 21.2911C21.228 13.4129 25.507 6.5339 31.8677 2.85163L31.9055 2.83057Z"
                   fill="#96E6FE"
                 />
