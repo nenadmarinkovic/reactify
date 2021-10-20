@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ToggleButton = styled.button`
-  margin-top: 20px;
   border: none;
   box-shadow: ${({ theme }) => theme.switchShadow};
   background: ${({ theme }) => theme.switchBackground};
@@ -9,7 +8,8 @@ export const ToggleButton = styled.button`
   cursor: pointer;
   transition: 0.3s;
   padding: 5px 10px;
-
+  margin-bottom: 7px;
+  
   :hover {
     background: ${({ theme }) => theme.switchHover};
   }

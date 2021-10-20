@@ -2,28 +2,46 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 
 @font-face {
-  font-family: 'Rigid Square Regular';
-  src: url('../fonts/RigidSquare-Regular.woff2') format('woff2'),
-      url('../fonts/RigidSquare-Regular.woff') format('woff');
+  font-family: 'Studio-Feixen-Sans Regular';
+  src: url('../fonts/StudioFeixenSans-Regular.woff2') format('woff2'),
+      url('../fonts/StudioFeixenSans-Regular.woff') format('woff');
       font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Rigid Square Light';
-  src: url('../fonts/RigidSquare-Light.woff2') format('woff2'),
-      url('../fonts/RigidSquare-Light.woff') format('woff');
+  font-family: 'Studio-Feixen-Sans Bold';
+  src: url('../fonts/StudioFeixenSans-Bold.woff2') format('woff2'),
+      url('../fonts/StudioFeixenSans-Bold.woff') format('woff');
+      font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Studio-Feixen-Sans Black';
+  src: url('../fonts/StudioFeixenSans-Black.woff2') format('woff2'),
+      url('../fonts/StudioFeixenSans-Black.woff') format('woff');
+      font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Studio-Feixen-Sans Book';
+  src: url('../fonts/StudioFeixenSans-Book.woff2') format('woff2'),
+      url('../fonts/StudioFeixenSans-Book.woff') format('woff');
       font-weight: lighter;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Brandon Grotesque Bold';
-  src: url('../fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
-      url('../fonts/BrandonGrotesque-Bold.woff') format('woff');
-      font-weight: bold;
+  font-family: 'Studio-Feixen-Sans Medium';
+  src: url('../fonts/StudioFeixenSans-Medium.woff2') format('woff2'),
+      url('../fonts/StudioFeixenSans-Medium.woff') format('woff');
+      font-weight: normal;
   font-style: normal;
   font-display: block;
 }
@@ -35,7 +53,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Studio-Feixen-Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -43,6 +61,7 @@ html {
   height:100%;
   overflow-x: hidden;
   transition: all 0.25s linear;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -54,6 +73,10 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

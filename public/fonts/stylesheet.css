@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Studio Feixen Sans';
+    src: url('StudioFeixenSans-Bold.woff2') format('woff2'),
+        url('StudioFeixenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Feixen Sans';
+    src: url('StudioFeixenSans-Regular.woff2') format('woff2'),
+        url('StudioFeixenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Feixen Sans Book';
+    src: url('StudioFeixenSans-Book.woff2') format('woff2'),
+        url('StudioFeixenSans-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Feixen Sans';
+    src: url('StudioFeixenSans-Black.woff2') format('woff2'),
+        url('StudioFeixenSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Feixen Sans';
+    src: url('StudioFeixenSans-Medium.woff2') format('woff2'),
+        url('StudioFeixenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,16 +1,45 @@
 import React from "react";
-import { BannerContainer } from "../styles/components/banner";
-import Toggle from "./toggle";
+import {
+  BannerContainer,
+  BannerWrap,
+  BannerTextWrap,
+  BannerTextWrapTop,
+  BannerTextTitle,
+  BannerTextWrapParagraph,
+  BannerTextButton,
+} from "../styles/components/banner";
+import Header from "../components/header";
 
-function Banner(props) {
+function Banner({ theme, toggleTheme }) {
   return (
-
-      <BannerContainer>
-        <div className="container">
-          <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
-        </div>
-      </BannerContainer>
- 
+    <BannerContainer>
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <div className="container">
+        <BannerWrap>
+          <BannerTextWrap>
+            <a
+              href="https://nenadmarinkovic.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BannerTextWrapTop>
+                - PROJECT BY NENAD MARINKOVIĆ
+              </BannerTextWrapTop>
+            </a>
+            <BannerTextTitle>
+              Web directory for data, APIs, and design
+            </BannerTextTitle>
+            <BannerTextWrapParagraph>
+              Dot Directory is a collection of useful web patterns, resources,
+              tools and technologies that help developers and designers in their
+              mission to make the web a better and more beautiful place.
+            </BannerTextWrapParagraph>
+            <BannerTextButton>Find out more</BannerTextButton>
+          </BannerTextWrap>
+        </BannerWrap>
+        <div style={{ height: "3000px" }}></div>
+      </div>
+    </BannerContainer>
   );
 }
 
