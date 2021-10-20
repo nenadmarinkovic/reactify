@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/banner";
+import Tech from "../components/tech";
 import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
@@ -27,6 +28,7 @@ export default function Home() {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
+        <Tech theme={theme} />
       </ThemeProvider>
     </>
   );
