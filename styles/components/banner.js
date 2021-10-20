@@ -10,7 +10,7 @@ export const BannerContainer = styled.div`
   height: 800px;
 
   @media (min-width: 1620px) {
-    height: 880px;
+    height: 1030px;
   }
 `;
 
