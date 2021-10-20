@@ -42,7 +42,7 @@ export const BannerTextTitle = styled.h1`
 export const BannerTextWrapParagraph = styled.p`
   font-size: 1.3rem;
   font-family: "Studio-Feixen-Sans Book";
-
+  line-height: 1.7;
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
 `;

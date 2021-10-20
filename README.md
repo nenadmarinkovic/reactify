@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Web directory for data, APIs, and design.
+<br>
+Dot Directory is a collection of useful web patterns, resources, tools and technologies that help developers and designers in their mission to make the web a better and more beautiful place.
 
 ## Getting Started
 
