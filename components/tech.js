@@ -37,6 +37,20 @@ function Tech({ theme }) {
           ></Logo>
           <Logo
             src={`images/icons/${
+              theme == "dark"
+                ? "prismic-dark-theme.svg"
+                : "prismic-light-theme.svg"
+            }`}
+          ></Logo>
+          <Logo
+            src={`images/icons/${
+              theme == "dark"
+                ? "strapi-dark-theme.svg"
+                : "strapi-light-theme.svg"
+            }`}
+          ></Logo>
+          <Logo
+            src={`images/icons/${
               theme == "dark" ? "figma-dark-theme.svg" : "figma-light-theme.svg"
             }`}
           ></Logo>
