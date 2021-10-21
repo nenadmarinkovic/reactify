@@ -19,20 +19,15 @@ function Tech({ theme }) {
           <Logo
             src={`images/icons/${
               theme == "dark"
-                ? "graphql-dark-theme.svg"
-                : "graphql-light-theme.svg"
+                ? "gatsby-dark-theme.svg"
+                : "gatsby-light-theme.svg"
             }`}
           ></Logo>
           <Logo
             src={`images/icons/${
               theme == "dark"
-                ? "sanity-dark-theme.svg"
-                : "sanity-light-theme.svg"
-            }`}
-          ></Logo>
-          <Logo
-            src={`images/icons/${
-              theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
+                ? "strapi-dark-theme.svg"
+                : "strapi-light-theme.svg"
             }`}
           ></Logo>
           <Logo
@@ -44,11 +39,17 @@ function Tech({ theme }) {
           ></Logo>
           <Logo
             src={`images/icons/${
-              theme == "dark"
-                ? "strapi-dark-theme.svg"
-                : "strapi-light-theme.svg"
+              theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
             }`}
           ></Logo>
+          <Logo
+            src={`images/icons/${
+              theme == "dark"
+                ? "sanity-dark-theme.svg"
+                : "sanity-light-theme.svg"
+            }`}
+          ></Logo>
+
           <Logo
             src={`images/icons/${
               theme == "dark" ? "figma-dark-theme.svg" : "figma-light-theme.svg"

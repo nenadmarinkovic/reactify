@@ -12,4 +12,6 @@ export const TechContainer = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+
+`;
