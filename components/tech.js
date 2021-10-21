@@ -49,7 +49,6 @@ function Tech({ theme }) {
                 : "sanity-light-theme.svg"
             }`}
           ></Logo>
-
           <Logo
             src={`images/icons/${
               theme == "dark" ? "figma-dark-theme.svg" : "figma-light-theme.svg"

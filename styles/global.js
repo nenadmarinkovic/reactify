@@ -94,6 +94,15 @@ a {
   }
 }
 
+.container-inside {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+
+
+}
+
 .page-transition-enter {
   opacity: 0;
 }
