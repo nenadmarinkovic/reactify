@@ -9,8 +9,8 @@ export const BannerContainer = styled.div`
   position: relative;
   height: 800px;
 
-  @media (min-width: 1620px) {
-    height: 1030px;
+  @media (min-width: 1980px) {
+    height: 1025px;
   }
 `;
 
