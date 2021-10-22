@@ -54,16 +54,15 @@ export const BannerTextButton = styled.button`
   display: inline-block;
   width: 255px;
   color: ${({ theme }) => theme.reversedText};
-  padding: 0 30px;
+  padding: 20px;
   font-size: 1.2rem;
-  line-height: 60px;
   font-weight: bold;
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
 
-  :hover {
+  /* :hover {
     background-color: #08d55a;
     border-color: #08d55a;
-  }
+  } */
 `;
