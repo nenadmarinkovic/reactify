@@ -8,6 +8,7 @@ import { lightTheme, darkTheme } from "../styles/theme";
 import Intro from "../components/intro";
 import Data from "../components/data";
 import Apis from "../components/apis";
+import Design from "../components/design";
 
 export default function Home() {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -35,6 +36,8 @@ export default function Home() {
         <Intro theme={theme} />
         <Data theme={theme} />
         <Apis theme={theme} />
+        <Design theme={theme} />
+        {/* <Footer theme={theme} /> */}
       </ThemeProvider>
     </>
   );

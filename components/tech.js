@@ -11,7 +11,6 @@ function Tech({ theme }) {
               theme == "dark" ? "react-dark-theme.svg" : "react-light-theme.svg"
             }`}
           ></Logo>
-
           <Logo
             src={`images/icons/${
               theme == "dark"

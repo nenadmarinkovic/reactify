@@ -11,6 +11,7 @@ export const lightTheme = {
   introBackground: "#fff",
   dataBackground: "#fff",
   itemBackground: "#f2f2f2",
+  designBackground: "#f2f2f2"
 };
 
 export const darkTheme = {
@@ -26,5 +27,6 @@ export const darkTheme = {
   introBackground: "#151515",
   dataBackground: "#151515",
   itemBackground: "#f2f2f2",
+  designBackground: "#151515"
   
 };

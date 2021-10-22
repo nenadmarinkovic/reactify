@@ -1,5 +1,5 @@
 import React from "react";
-import { DataWrap, DataFlex, DataItem } from "../styles/components/data";
+import { DataWrap, DataFlex, DataItems, DataItem } from "../styles/components/data";
 import { IntroText, IntroData } from "../styles/components/intro";
 function Data() {
   return (
@@ -7,21 +7,21 @@ function Data() {
       <div className="container-inside">
         <IntroText>Data</IntroText>
         <DataFlex>
-          <div>
-            <DataItem>1</DataItem>
+          <DataItems>
+            <DataItem className="no-ml">1</DataItem>
             <DataItem>2</DataItem>
-            <DataItem>3</DataItem>
-          </div>
-          <div>
-            <DataItem>1</DataItem>
+            <DataItem className="no-mr">3</DataItem>
+          </DataItems>
+          <DataItems>
+            <DataItem className="no-ml">1</DataItem>
             <DataItem>2</DataItem>
-            <DataItem>3</DataItem>
-          </div>
-          <div>
-            <DataItem>1</DataItem>
+            <DataItem className="no-mr">3</DataItem>
+          </DataItems>
+          <DataItems>
+            <DataItem className="no-ml">1</DataItem>
             <DataItem>2</DataItem>
-            <DataItem>3</DataItem>
-          </div>
+            <DataItem className="no-mr">3</DataItem>
+          </DataItems>
         </DataFlex>
       </div>
       <IntroData>APIs</IntroData>

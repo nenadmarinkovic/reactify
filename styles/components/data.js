@@ -8,6 +8,7 @@ export const DataWrap = styled.div`
 
 export const DataFlex = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 120px;
 `;
@@ -17,6 +18,12 @@ export const DataItem = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   height: 250px;
   width: 300px;
-  margin: 30px 15px;
+  margin: 15px 20px;
   border-radius: 10px;
 `;
+
+export const DataItems = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+

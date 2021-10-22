@@ -99,8 +99,6 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
-
-
 }
 
 .page-transition-enter {
@@ -120,6 +118,18 @@ a {
   opacity: 0;
   transition: opacity 300ms;
 }
+
+.no-ml {
+  margin-left: 0;
+}
+
+.no-mr {
+  margin-right: 0;
+}
+
+svg {
+    transition: all 0.25s linear;
+  }
 
 
 `;
