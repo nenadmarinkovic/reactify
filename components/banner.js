@@ -37,7 +37,6 @@ function Banner({ theme, toggleTheme }) {
             <BannerTextButton>Find out more</BannerTextButton>
           </BannerTextWrap>
         </BannerWrap>
-        <div style={{ height: "3000px" }}></div>
       </div>
     </BannerContainer>
   );

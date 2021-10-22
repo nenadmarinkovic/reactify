@@ -11,16 +11,17 @@ function Tech({ theme }) {
               theme == "dark" ? "react-dark-theme.svg" : "react-light-theme.svg"
             }`}
           ></Logo>
-          <Logo
-            src={`images/icons/${
-              theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
-            }`}
-          ></Logo>
+
           <Logo
             src={`images/icons/${
               theme == "dark"
                 ? "gatsby-dark-theme.svg"
                 : "gatsby-light-theme.svg"
+            }`}
+          ></Logo>
+          <Logo
+            src={`images/icons/${
+              theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
             }`}
           ></Logo>
           <Logo
@@ -52,11 +53,6 @@ function Tech({ theme }) {
           <Logo
             src={`images/icons/${
               theme == "dark" ? "figma-dark-theme.svg" : "figma-light-theme.svg"
-            }`}
-          ></Logo>
-          <Logo
-            src={`images/icons/${
-              theme == "dark" ? "git-dark-theme.svg" : "git-light-theme.svg"
             }`}
           ></Logo>
         </TechContainer>

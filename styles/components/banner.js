@@ -25,7 +25,7 @@ export const BannerTextWrap = styled.div`
 `;
 
 export const BannerTextWrapTop = styled.div`
-  color: #08c453;
+  color: ${({ theme }) => theme.helperText};
   text-transform: capitalize;
   font-family: "Studio-Feixen-Sans Bold";
   letter-spacing: 2px;
@@ -33,7 +33,7 @@ export const BannerTextWrapTop = styled.div`
 `;
 
 export const BannerTextTitle = styled.h1`
-  font-size: 3.125rem;
+  font-size: 3.525rem;
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
@@ -49,11 +49,11 @@ export const BannerTextWrapParagraph = styled.p`
 
 export const BannerTextButton = styled.button`
   margin: 20px 0;
-  background-color: #08c453;
-  border: #08c453;
+  background-color: ${({ theme }) => theme.helperText};
+  border: ${({ theme }) => theme.helperText};
   display: inline-block;
   width: 255px;
-  color: #05192d;
+  color: ${({ theme }) => theme.reversedText};
   padding: 0 30px;
   font-size: 1.2rem;
   line-height: 60px;

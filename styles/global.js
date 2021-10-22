@@ -95,7 +95,7 @@ a {
 }
 
 .container-inside {
-  max-width: 860px;
+  max-width: 1060px;
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;

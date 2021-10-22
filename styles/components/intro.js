@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 export const IntroText = styled.div`
   color: ${({ theme }) => theme.mainText};
-  font-size: 3.125rem;
+  font-size: 3.525rem;
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
   padding: 120px 120px 60px 120px;
+`;
+
+export const IntroData = styled.div`
+  color: ${({ theme }) => theme.mainText};
+  font-size: 3.525rem;
+  font-family: "Studio-Feixen-Sans Black";
+  text-align: center;
+  padding: 120px 120px 280px 120px;
 `;
 
 export const Wrap = styled.div`
@@ -43,5 +51,5 @@ export const CountText = styled.div`
 export const CountWrap = styled.div`
   display: flex;
   align-items: center;
-  color: #08c453;
+  color: ${({ theme }) => theme.helperText};
 `;
