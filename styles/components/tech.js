@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TechWrap = styled.div`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.background};
-  padding: 40px 0 40px 0;
+  padding: 20px 0;
 `;
 
 export const TechContainer = styled.div`

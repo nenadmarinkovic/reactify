@@ -7,7 +7,11 @@ export const BannerContainer = styled.div`
   background-size: cover;
   background-position: center top;
   position: relative;
-  height: 800px;
+  height: 700px;
+
+  @media (min-width: 1580px) {
+    height: 800px;
+  }
 
   @media (min-width: 1980px) {
     height: 1025px;
@@ -15,13 +19,21 @@ export const BannerContainer = styled.div`
 `;
 
 export const BannerWrap = styled.div`
-  padding-top: 280px;
+  padding-top: 180px;
+
+  @media (min-width: 1580px) {
+    padding-top: 280px;
+  }
 `;
 
 export const BannerTextWrap = styled.div`
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 55%;
+
+  @media (min-width: 1580px) {
+    width: 48%;
+  }
 `;
 
 export const BannerTextWrapTop = styled.div`

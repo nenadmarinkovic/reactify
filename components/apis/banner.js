@@ -6,7 +6,6 @@ import {
   BannerTextWrapTop,
   BannerTextTitle,
   BannerTextWrapParagraph,
-  BannerTextButton,
 } from "../../styles/components/apis/banner";
 import Header from "../../components/header";
 
@@ -26,15 +25,12 @@ function Banner({ theme, toggleTheme }) {
                 - PROJECT BY NENAD MARINKOVIĆ
               </BannerTextWrapTop>
             </a>
-            <BannerTextTitle>
-              APIs
-            </BannerTextTitle>
+            <BannerTextTitle>APIs</BannerTextTitle>
             <BannerTextWrapParagraph>
               Dot Directory is a collection of useful web patterns, resources,
               tools and technologies that help developers and designers in their
               mission to make the web a better and more beautiful place.
             </BannerTextWrapParagraph>
-           
           </BannerTextWrap>
         </BannerWrap>
       </div>

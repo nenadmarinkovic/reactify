@@ -80,12 +80,12 @@ a {
 }
 
 .container {
-  max-width: 1420px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
 
-@media (max-width: 1680px) {
+@media (min-width: 1580px) {
     max-width: 1440px;
 }
 
