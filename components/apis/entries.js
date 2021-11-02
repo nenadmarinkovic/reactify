@@ -6,18 +6,17 @@ function Entries({ list }) {
   console.log(list);
   return (
     <ItemsFlex>
-      {list.map(({ API = "", Description, Link, index }) => (
-        <Fade delay={300}>
+      {list.map((item, index) => (
+        <Fade delay={index * 10}>
           <Item key={index}>
             <div>
-              <span>{index}</span>
-              <span>{API}</span>
+              <span>{item.API}</span>
               <br></br>
               <br></br>
-              <span>{Description}</span>
+              <span>{item.Description}</span>
               <br></br>
               <br></br>
-              <a href={`${Link}`} target="_blank">
+              <a href={`${item.Link}`} target="_blank">
                 Go to the link
               </a>
             </div>
