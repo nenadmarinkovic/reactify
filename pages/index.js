@@ -7,7 +7,7 @@ import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 import Intro from "../components/intro";
 import Data from "../components/data";
-import Apis from "../components/apis";
+// import Apis from "../components/apis";
 import Design from "../components/design";
 import Footer from "../components/footer";
 
@@ -38,7 +38,7 @@ export default function Home() {
         <Data theme={theme} />
 
         <Design theme={theme} />
-        <Apis theme={theme} />
+        {/* <Apis theme={theme} /> */}
         <Footer theme={theme} />
       </ThemeProvider>
     </>
