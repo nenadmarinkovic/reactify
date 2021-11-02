@@ -48,7 +48,11 @@ function Header({ theme, toggleTheme }) {
           <HeaderFlex>
             <HeaderLinks>
               <HeaderLink>Data</HeaderLink>
-              <HeaderLink>Design</HeaderLink>
+              <HeaderLink>
+              <Link href="/design">
+                  <a>Design</a>
+                </Link>
+              </HeaderLink>
               <HeaderLink>
                 <Link href="/apis">
                   <a>APIs</a>

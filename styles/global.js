@@ -58,10 +58,10 @@ html {
   margin: 0;
   padding: 0;
   background: white;
-  height:100%;
+  height: 100%;
   overflow-x: hidden;
-  transition: all 0.25s linear;
   -moz-osx-font-smoothing: grayscale;
+  background: ${({ theme }) => theme.background};
 }
 
 body {
