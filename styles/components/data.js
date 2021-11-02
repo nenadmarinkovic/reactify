@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const DataWrap = styled.div`
   transition: all 0.25s linear;
-  background: white;
   background: ${({ theme }) => theme.dataBackground};
 `;
 

@@ -25,10 +25,6 @@ export const Wrap = styled.div`
 export const FlexItems = styled.div`
   display: flex;
   justify-content: space-between;
-
-  /* @media (max-width: 780px) {
-    flex-direction: column;
-  } */
 `;
 
 export const FlexItem = styled.div`

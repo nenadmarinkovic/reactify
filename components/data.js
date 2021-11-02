@@ -24,7 +24,7 @@ function Data() {
           </DataItems>
         </DataFlex>
       </div>
-      <IntroData>APIs</IntroData>
+      <IntroData>Design</IntroData>
     </DataWrap>
   );
 }

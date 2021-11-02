@@ -9,6 +9,7 @@ import Intro from "../components/intro";
 import Data from "../components/data";
 import Apis from "../components/apis";
 import Design from "../components/design";
+import Footer from "../components/footer";
 
 export default function Home() {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -35,9 +36,10 @@ export default function Home() {
         <Tech theme={theme} />
         <Intro theme={theme} />
         <Data theme={theme} />
-        <Apis theme={theme} />
+
         <Design theme={theme} />
-        {/* <Footer theme={theme} /> */}
+        <Apis theme={theme} />
+        <Footer theme={theme} />
       </ThemeProvider>
     </>
   );

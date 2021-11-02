@@ -1,15 +1,26 @@
 import styled from "styled-components";
 
 export const DesignContainer = styled.div`
-  transition: all 0.25s linear;
-  background: ${({ theme }) => theme.designBackground};
-  text-align: center;
-  padding: 120px 0;
-  transition: all 0.25s linear;
+  padding-top: 300px;
+  background-color: #2a3ce0;
+`;
 
+export const DesignBox = styled.div`
+  padding-top: 380px;
+  background: ${({ theme }) => theme.itemBackground};
+  border-radius: 10px;
+  margin-top: -500px;
+`;
 
-    svg {
-      transition: all 0.25s linear;
-    
-  }
+export const DesignFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+`;
+
+export const DesignItem = styled.div`
+  background: ${({ theme }) => theme.itemBackground};
+  border-radius: 10px;
+  height: 120px;
+  width: 48%;
 `;

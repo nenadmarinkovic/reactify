@@ -27,7 +27,7 @@ function Banner({ theme, toggleTheme }) {
               </BannerTextWrapTop>
             </a>
             <BannerTextTitle>
-              Web directory for data, APIs, and design
+              Web directory for data, design, and APIs
             </BannerTextTitle>
             <BannerTextWrapParagraph>
               Dot Directory is a collection of useful web patterns, resources,
