@@ -61,7 +61,6 @@ html {
   height: 100%;
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.background};
 }
 
