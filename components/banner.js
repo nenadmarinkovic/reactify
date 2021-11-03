@@ -17,15 +17,8 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <a
-              href="https://nenadmarinkovic.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BannerTextWrapTop>
-                - PROJECT BY NENAD MARINKOVIĆ
-              </BannerTextWrapTop>
-            </a>
+            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
+
             <BannerTextTitle>
               Web directory for data, design, and APIs
             </BannerTextTitle>

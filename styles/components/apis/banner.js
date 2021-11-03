@@ -37,6 +37,10 @@ export const BannerTextWrapParagraph = styled.p`
   line-height: 1.7;
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
+
+  a {
+    color: ${({ theme }) => theme.helperText};
+  }
 `;
 
 export const BannerTextButton = styled.button`

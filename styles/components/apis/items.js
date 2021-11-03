@@ -4,7 +4,7 @@ export const ItemsContainer = styled.div`
   background: ${({ theme }) => theme.dataBackground};
   color: ${({ theme }) => theme.mainText};
   transition: all 0.25s linear;
-  padding: 120px 0;
+  padding: 60px 0 120px 0;
 `;
 
 export const Item = styled.div`

@@ -12,7 +12,7 @@ function Entries({ list }) {
   return (
     <ItemsFlex>
       {list.map((item, index) => (
-        <Fade delay={index * 10} key={index}>
+        <Fade delay={index} key={index}>
           <a href={`${item.Link}`} target="_blank" rel="noreferrer">
             <Item>
               <ItemTitle>{item.API}</ItemTitle>
