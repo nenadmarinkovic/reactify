@@ -1,26 +1,24 @@
 import React from "react";
-import { Item, ItemsFlex } from "../../styles/components/apis/items";
+import {
+  Item,
+  ItemsFlex,
+  ItemTitle,
+  ItemDescription,
+} from "../../styles/components/apis/items";
 import Fade from "react-reveal/Fade";
 
 function Entries({ list }) {
-  console.log(list);
+
   return (
     <ItemsFlex>
       {list.map((item, index) => (
         <Fade delay={index * 10} key={index}>
-          <Item>
-            <div>
-              <span>{item.API}</span>
-              <br></br>
-              <br></br>
-              <span>{item.Description}</span>
-              <br></br>
-              <br></br>
-              <a href={`${item.Link}`} target="_blank" rel="noreferrer">
-                Go to the link
-              </a>
-            </div>
-          </Item>
+          <a href={`${item.Link}`} target="_blank" rel="noreferrer">
+            <Item>
+              <ItemTitle>{item.API}</ItemTitle>
+              <ItemDescription>{item.Description}</ItemDescription>
+            </Item>
+          </a>
         </Fade>
       ))}
     </ItemsFlex>

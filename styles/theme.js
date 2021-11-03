@@ -11,7 +11,8 @@ export const lightTheme = {
   introBackground: "#fff",
   dataBackground: "#fff",
   itemBackground: "#f2f2f2",
-  designBackground: "#f2f2f2"
+  designBackground: "#f2f2f2",
+  borderHover: "1px solid rgba(0, 0, 0, 0.7)",
 };
 
 export const darkTheme = {
@@ -26,7 +27,7 @@ export const darkTheme = {
   reversedText: "#000",
   introBackground: "#000",
   dataBackground: "#000",
-  itemBackground: "#fff",
-  designBackground: "#000"
-  
+  itemBackground: "#1c1f26",
+  designBackground: "#000",
+  borderHover: "1px solid rgba(255, 255, 255, 0.5)",
 };

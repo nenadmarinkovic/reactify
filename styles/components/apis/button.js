@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonFlex = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 `;
 
@@ -12,10 +12,10 @@ export const Button = styled.button`
   border: ${({ theme }) => theme.helperText};
   display: inline-block;
   color: ${({ theme }) => theme.reversedText};
-  padding: 5px 10px;
+  padding: 8px 23px;
   font-size: 0.75rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: 0.3s;
   cursor: pointer;
 `;
