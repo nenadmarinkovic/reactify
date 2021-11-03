@@ -4,15 +4,10 @@ export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.background};
   transition: all 0.25s linear;
   position: relative;
-
-  @media (min-width: 1980px) {
-    height: 1025px;
-  }
 `;
 
 export const BannerWrap = styled.div`
   padding: 180px 0 80px 0;
-
 `;
 
 export const BannerTextWrap = styled.div`
