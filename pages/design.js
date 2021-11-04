@@ -29,8 +29,6 @@ export default function Home({ data }) {
     return <div />;
   }
 
-  console.log(data);
-
   return (
     <>
       <ThemeProvider theme={themeMode}>
