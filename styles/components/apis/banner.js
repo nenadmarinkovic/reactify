@@ -4,15 +4,10 @@ export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.background};
   transition: all 0.25s linear;
   position: relative;
-
-  @media (min-width: 1980px) {
-    height: 1025px;
-  }
 `;
 
 export const BannerWrap = styled.div`
   padding: 180px 0 80px 0;
-
 `;
 
 export const BannerTextWrap = styled.div`
@@ -42,6 +37,10 @@ export const BannerTextWrapParagraph = styled.p`
   line-height: 1.7;
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
+
+  a {
+    color: ${({ theme }) => theme.helperText};
+  }
 `;
 
 export const BannerTextButton = styled.button`

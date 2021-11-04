@@ -131,5 +131,11 @@ svg {
     transition: all 0.25s linear;
   }
 
+.active-button {
+  border: ${({ theme }) => theme.activeButtonBorder} !important;
+  color: ${({ theme }) => theme.helperText} !important;
+  background: transparent !important;
+}
+
 
 `;

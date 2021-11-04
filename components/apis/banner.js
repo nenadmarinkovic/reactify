@@ -16,20 +16,19 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <a
-              href="https://nenadmarinkovic.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BannerTextWrapTop>
-                - PROJECT BY NENAD MARINKOVIĆ
-              </BannerTextWrapTop>
-            </a>
+            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
             <BannerTextTitle>APIs</BannerTextTitle>
             <BannerTextWrapParagraph>
-              Dot Directory is a collection of useful web patterns, resources,
-              tools and technologies that help developers and designers in their
-              mission to make the web a better and more beautiful place.
+              A collection of free APIs for use in software and web development
+              projects. Official list can be found at{" "}
+              <a
+                href="https://github.com/public-apis/public-apis"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Public APIs GitHub profile
+              </a>
+              .
             </BannerTextWrapParagraph>
           </BannerTextWrap>
         </BannerWrap>

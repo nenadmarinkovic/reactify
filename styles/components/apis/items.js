@@ -4,18 +4,32 @@ export const ItemsContainer = styled.div`
   background: ${({ theme }) => theme.dataBackground};
   color: ${({ theme }) => theme.mainText};
   transition: all 0.25s linear;
-  padding: 120px 0;
+  padding: 60px 0 120px 0;
 `;
 
 export const Item = styled.div`
   background: ${({ theme }) => theme.itemBackground};
-  color: black;
+  color: ${({ theme }) => theme.mainText};
   transition: all 0.25s linear;
   width: 300px;
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
   border-radius: 10px;
+  box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
+  border: 1px solid rgba(151, 151, 151, 0.34);
+  cursor: pointer;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  a {
+    color: ${({ theme }) => theme.mainText};
+  }
+
+  :hover {
+    border: ${({ theme }) => theme.borderHover};
+  }
 `;
 
 export const ItemsFlex = styled.div`
@@ -23,5 +37,15 @@ export const ItemsFlex = styled.div`
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  padding-top: 60px
+  padding-top: 60px;
+`;
+
+export const ItemTitle = styled.div`
+  font-family: "Studio-Feixen-Sans Black";
+  font-size: 23px;
+`;
+
+export const ItemDescription = styled.div`
+  margin-top: 20px;
+  line-height: 1.7;
 `;

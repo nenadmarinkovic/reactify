@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  ButtonFlex,
-  Button
-} from "../../styles/components/apis/button";
+import { ButtonFlex, Button } from "../../styles/components/apis/button";
 
 function ButtonCategory({ button, filter }) {
   const [active, setActive] = useState(false);
