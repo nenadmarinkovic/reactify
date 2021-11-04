@@ -8,14 +8,18 @@ import { lightTheme, darkTheme } from "../styles/theme";
 import { request } from "../lib/datocms";
 
 const HOMEPAGE_QUERY = `{
-  text {
-    all {
-      value
-    }
+  allItems {
+    id
+    name
+    _status
+    _firstPublishedAt
+  }
+
+  _allItemsMeta {
+    count
   }
 }
 `;
-
 
 export default function Home({ data }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -26,7 +30,6 @@ export default function Home({ data }) {
   }
 
   console.log(data);
-  
 
   return (
     <>
@@ -41,29 +44,25 @@ export default function Home({ data }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-     
-
         <Banner toggleTheme={toggleTheme} theme={theme} />
-        <div>
-          {data.allItems.map(e => {
-          return <span>{e.name}</span>
-
+        <div className="container">
+          {data.allItems.map((e) => {
+            return <li key={e.id}>{e.name}</li>;
           })}
         </div>
-       
+
         {/* <Footer theme={theme} /> */}
       </ThemeProvider>
     </>
   );
 }
 
-
 export async function getStaticProps() {
   const data = await request({
     query: HOMEPAGE_QUERY,
-    variables: { limit: 10 }
+    variables: { limit: 10 },
   });
   return {
-    props: { data }
+    props: { data },
   };
 }
