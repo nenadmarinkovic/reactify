@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/react": "^1.6.22",
+    "graphql-request": "^3.6.1",
     "next": "11.1.2",
+    "next-mdx-remote": "^3.0.7",
     "next-page-transitions": "^1.0.0-beta.2",
+    "raw-loader": "^4.0.2",
     "react": "17.0.2",
     "react-countup": "^6.0.0",
     "react-dom": "17.0.2",
+    "react-markdown": "^7.1.0",
     "react-reveal": "^1.2.2",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.3.1"
