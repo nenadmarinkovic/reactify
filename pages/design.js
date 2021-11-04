@@ -45,10 +45,10 @@ export default function Home({ data }) {
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
         <div>
-          {/* {data.allItems.map(e => {
+          {data.allItems.map(e => {
           return <span>{e.name}</span>
 
-          })} */}
+          })}
         </div>
        
         {/* <Footer theme={theme} /> */}
