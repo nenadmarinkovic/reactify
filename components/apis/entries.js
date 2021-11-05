@@ -8,7 +8,6 @@ import {
 import Fade from "react-reveal/Fade";
 
 function Entries({ list }) {
-
   return (
     <ItemsFlex>
       {list.map((item, index) => (
