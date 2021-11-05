@@ -64,7 +64,7 @@ Home.getInitialProps = async (ctx) => {
       "Content-Type": "application/json",
     };
 
-    const articles = await fetch("http://localhost:1337/articles", {
+    const articles = await fetch("https://dot-directory.herokuapp.com/articles", {
       method: "GET",
       headers,
     })
