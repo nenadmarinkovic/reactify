@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Banner from "../components/apis/banner";
-import Code from "../components/data/highlighter";
 import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
@@ -39,8 +38,6 @@ export default function Home({ articles, error }) {
             ))}
           </ul>
         </div>
-
-       <Code/>
       </ThemeProvider>
     </>
   );
@@ -48,14 +45,11 @@ export default function Home({ articles, error }) {
 
 Home.getInitialProps = async (ctx) => {
   try {
-    // Parses the JSON returned by a network request
     const parseJSON = (resp) => (resp.json ? resp.json() : resp);
-    // Checks if a network request came back fine, and throws an error if not
     const checkStatus = (resp) => {
       if (resp.status >= 200 && resp.status < 300) {
         return resp;
       }
-
       return parseJSON(resp).then((resp) => {
         throw resp;
       });
@@ -65,18 +59,19 @@ Home.getInitialProps = async (ctx) => {
       "Content-Type": "application/json",
     };
 
-    const articles = await fetch(
-      "http://strapi.dot.directory/articles",
-      {
-        method: "GET",
-        headers,
-      }
-    )
+    const articles = await fetch("http://strapi.dot.directory/articles", {
+      method: "GET",
+      headers,
+    })
       .then(checkStatus)
       .then(parseJSON);
 
-    return { articles };
+    return {
+      articles,
+    };
   } catch (error) {
-    return { error };
+    return {
+      error,
+    };
   }
 };
