@@ -18,7 +18,6 @@ function Apis({ theme }) {
           <ApisBox>
             <UpText>Web directory for data and design</UpText>
             <UpText>Web directory for data and design</UpText>
-            <UpText>Web directory for data and design</UpText>
             <DownText>
               Dot Directory is a collection of useful web patterns, resources,
               tools and technologies that help developers and designers in their
