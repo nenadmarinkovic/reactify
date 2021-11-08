@@ -16,7 +16,7 @@ const Highlighter = (props) => {
       {({ className, style, tokens, i, getLineProps, getTokenProps }) => (
         <Pre className={className} style={style} key={i}>
           {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })}>
+            <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
                 <span key={i} {...getTokenProps({ token, key })} />
               ))}
