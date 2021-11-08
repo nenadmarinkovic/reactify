@@ -137,5 +137,24 @@ svg {
   background: transparent !important;
 }
 
+.tech-icon {
+  width: 140px;
+}
+
+.tech-icon-alt {
+  width: 80px;
+}
+
+span.token.string {
+  color: ${({ theme }) => theme.spanToken} !important;
+}
+
+span.token.template-string.interpolation.constant {
+  color: #E16EA6 !important;
+}
+
+span.token.class-name {
+  color: #E6922F !important;
+}
 
 `;

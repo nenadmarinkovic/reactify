@@ -27,7 +27,7 @@ export default function Home() {
           <title>Dot Directory</title>
           <meta
             name="description"
-            content="Personal web directory for data, APIs, and design"
+            content="Personal web directory for design, data, APIs"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -35,9 +35,9 @@ export default function Home() {
         <Banner toggleTheme={toggleTheme} theme={theme} />
         <Tech theme={theme} />
         <Intro theme={theme} />
-        <Data theme={theme} />
-
         <Design theme={theme} />
+
+        <Data globalTheme={theme} />
         <Apis theme={theme} />
         <Footer theme={theme} />
       </ThemeProvider>

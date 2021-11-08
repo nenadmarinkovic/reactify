@@ -8,7 +8,7 @@ export const IntroText = styled.div`
   padding: 120px 120px 60px 120px;
 `;
 
-export const IntroData = styled.div`
+export const IntroDesign = styled.div`
   color: ${({ theme }) => theme.mainText};
   font-size: 3.525rem;
   font-family: "Studio-Feixen-Sans Black";

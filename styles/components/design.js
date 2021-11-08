@@ -1,26 +1,28 @@
 import styled from "styled-components";
 
-export const DesignContainer = styled.div`
-  padding-top: 300px;
-  background-color: #2a3ce0;
-`;
-
-export const DesignBox = styled.div`
-  padding-top: 380px;
-  background: ${({ theme }) => theme.itemBackground};
-  border-radius: 10px;
-  margin-top: -500px;
+export const DesignWrap = styled.div`
+  transition: all 0.25s linear;
+  background: ${({ theme }) => theme.designBackground};
 `;
 
 export const DesignFlex = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-bottom: 120px;
 `;
 
 export const DesignItem = styled.div`
+  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
+  height: 250px;
+  width: 300px;
+  margin: 15px 20px;
   border-radius: 10px;
-  height: 120px;
-  width: 48%;
+  border: ${({ theme }) => theme.borderHover};
+`;
+
+export const DesignItems = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ToggleButton = styled.button`
   border: none;
-  box-shadow: ${({ theme }) => theme.switchShadow};
   background: ${({ theme }) => theme.switchBackground};
   border-radius: 5px;
   cursor: pointer;

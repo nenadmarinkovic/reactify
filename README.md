@@ -1,4 +1,4 @@
-Web directory for data, APIs, and design.
+Web directory for design, data, APIs.
 <br>
 <br>
 Dot Directory is a collection of useful web patterns, resources, tools and technologies that help developers and designers in their mission to make the web a better and more beautiful place.

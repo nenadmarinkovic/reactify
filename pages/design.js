@@ -37,7 +37,7 @@ export default function Home({ data }) {
           <title>Dot Directory</title>
           <meta
             name="description"
-            content="Personal web directory for data, APIs, and design"
+            content="Personal web directory for design, data, APIs"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

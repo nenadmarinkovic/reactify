@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/apis/banner";
+import Code from "../components/data/highlighter";
 import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
@@ -25,7 +26,7 @@ export default function Home({ articles, error }) {
           <title>Dot Directory</title>
           <meta
             name="description"
-            content="Personal web directory for data, APIs, and design"
+            content="Personal web directory for design, data, APIs"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -39,7 +40,7 @@ export default function Home({ articles, error }) {
           </ul>
         </div>
 
-        {/* <Footer theme={theme} /> */}
+       <Code/>
       </ThemeProvider>
     </>
   );
@@ -64,10 +65,13 @@ Home.getInitialProps = async (ctx) => {
       "Content-Type": "application/json",
     };
 
-    const articles = await fetch("https://dot-directory.herokuapp.com/articles", {
-      method: "GET",
-      headers,
-    })
+    const articles = await fetch(
+      "http://strapi.dot.directory/articles",
+      {
+        method: "GET",
+        headers,
+      }
+    )
       .then(checkStatus)
       .then(parseJSON);
 

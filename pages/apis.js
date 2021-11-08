@@ -19,10 +19,10 @@ export default function Home({ items }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory</title>
+          <title>Dot Directory | APIs</title>
           <meta
             name="description"
-            content="Personal web directory for data, APIs, and design"
+            content="Personal web directory for design, data, APIs"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
