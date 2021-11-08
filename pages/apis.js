@@ -28,7 +28,7 @@ export default function Home({ items }) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
-        <Items items={items.entries} />
+        <Items items={items.entries} theme={theme} />
         {/* <Footer theme={theme} /> */}
       </ThemeProvider>
     </>

@@ -7,7 +7,8 @@ import { lightTheme, darkTheme } from "../styles/theme";
 
 import { request } from "../lib/datocms";
 
-const HOMEPAGE_QUERY = `{
+const HOMEPAGE_QUERY = `
+{
   allItems {
     id
     name

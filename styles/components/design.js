@@ -17,7 +17,7 @@ export const DesignItem = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   height: 250px;
   width: 300px;
-  margin: 15px 20px;
+  margin-bottom: 40px;
   border-radius: 10px;
   border: ${({ theme }) => theme.borderHover};
 `;

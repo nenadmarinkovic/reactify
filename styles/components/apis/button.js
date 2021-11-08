@@ -4,6 +4,7 @@ export const ButtonFlex = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  transition: all 0.25s linear;
 `;
 
 export const Button = styled.button`

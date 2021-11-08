@@ -4,7 +4,6 @@ export const ApisContainer = styled.div`
   transition: all 0.25s linear;
   text-align: center;
   padding: 20px 0;
-  transition: all 0.25s linear;
   padding-top: 80px;
   background-color: #2a3ce0;
 `;

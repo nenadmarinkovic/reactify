@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.background};
   transition: all 0.25s linear;
-  position: relative;
 `;
 
 export const BannerWrap = styled.div`

@@ -19,14 +19,12 @@ function Items({ items }) {
   };
 
   return (
-    <>
-      <ItemsContainer>
-        <div className="container">
-          <ButtonCategory button={buttons} filter={filter} />
-          <Entries list={list} />
-        </div>
-      </ItemsContainer>
-    </>
+    <ItemsContainer>
+      <div className="container">
+        <ButtonCategory button={buttons} filter={filter} />
+        <Entries list={list} />
+      </div>
+    </ItemsContainer>
   );
 }
 
