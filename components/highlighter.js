@@ -13,12 +13,12 @@ const Highlighter = (props) => {
       code={datoCMS}
       language="jsx"
     >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
+      {({ className, style, tokens, i, getLineProps, getTokenProps }) => (
+        <Pre className={className} style={style} key={i}>
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
+                <span key={i} {...getTokenProps({ token, key })} />
               ))}
             </div>
           ))}
