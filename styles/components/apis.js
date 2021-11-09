@@ -20,7 +20,7 @@ export const ApisTitle = styled.div`
   font-size: 3.525rem;
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
-  padding: 60px 120px 60px 120px;
+  padding: 80px 120px 60px 120px;
 `;
 
 export const ApisBox = styled.div`
@@ -46,4 +46,39 @@ export const DownText = styled.div`
   line-height: 1.7;
   margin: 10px 0;
   color: #fff;
+`;
+
+export const HelperText = styled.div`
+  font-size: 23px;
+  margin-top: 20px;
+  color: white;
+`;
+
+export const LearnMore = styled.div`
+  font-size: 18px;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Studio-Feixen-Sans Regular";
+  cursor: pointer;
+
+  svg {
+    margin-top: 1px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(17px);
+
+    path {
+      fill: white;
+    }
+  }
+
+  :hover {
+    svg {
+      transition: transform 0.3s ease-in-out;
+      transform: translate(34px);
+    }
+  }
 `;

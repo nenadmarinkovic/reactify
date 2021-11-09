@@ -7,13 +7,36 @@ import {
   ApisSVG,
   UpText,
   DownText,
+  HelperText, LearnMore
 } from "../styles/components/apis";
 
 function Apis({ theme }) {
   return (
     <ApisContainer>
       <div className="container-inside">
-        <ApisTitle>APIs</ApisTitle>
+        <ApisTitle>
+          APIs
+          <HelperText>
+            A list of resources for developers and designers
+          </HelperText>
+          <LearnMore>
+            <span>Discover more resources</span>
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0.46967 0.469668C0.76256 0.176777 1.2374 0.176777 1.5303 0.469668L7.5303 6.4697C7.8232 6.7626 7.8232 7.2374 7.5303 7.5303L1.5303 13.5303C1.2374 13.8232 0.76256 13.8232 0.46967 13.5303C0.17678 13.2374 0.17678 12.7626 0.46967 12.4697L5.9393 7L0.46967 1.53033C0.17678 1.23744 0.17678 0.762558 0.46967 0.469668Z"
+                fill="black"
+              />
+            </svg>
+          </LearnMore>
+        </ApisTitle>
         <ApisFlex>
           <ApisBox>
             <UpText>Web directory for data and design</UpText>

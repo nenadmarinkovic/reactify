@@ -16,11 +16,17 @@ export const Item = styled.div`
   box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
   border: 1px solid rgba(151, 151, 151, 0.34);
   cursor: pointer;
-  height: 185px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  
   a {
     color: ${({ theme }) => theme.mainText};
   }
@@ -41,6 +47,7 @@ export const ItemsFlex = styled.div`
 export const ItemTitle = styled.div`
   font-family: "Studio-Feixen-Sans Black";
   font-size: 23px;
+  margin-top: 20px;
 `;
 
 export const ItemDescription = styled.div`

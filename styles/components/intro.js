@@ -49,3 +49,38 @@ export const CountWrap = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.helperText};
 `;
+
+export const HelperText = styled.div`
+  font-size: 23px;
+  margin-top: 20px;
+  color: ${({ theme }) => theme.mainText};
+`;
+
+export const LearnMore = styled.div`
+  font-size: 18px;
+  margin-top: 30px;
+  color: ${({ theme }) => theme.mainText};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Studio-Feixen-Sans Regular";
+  cursor: pointer;
+
+  svg {
+    margin-top: 2px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(17px);
+
+    path {
+      fill: ${({ theme }) => theme.mainText};
+    }
+  }
+
+  :hover {
+    svg {
+      transition: transform 0.3s ease-in-out;
+      transform: translate(34px);
+    }
+  }
+`;

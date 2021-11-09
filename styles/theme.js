@@ -35,4 +35,5 @@ export const darkTheme = {
   activeButtonBorder: "2px solid #08d55a",
   activeButtonColor: "#08d55a",
   spanToken: "#08d55a",
+  
 };

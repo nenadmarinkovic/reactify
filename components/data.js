@@ -7,17 +7,25 @@ import {
 } from "../styles/components/data";
 import Highlighter from "./highlighter";
 
+import datoCMS from "./data/code-datocms";
+import NextJS from "./data/code-nextjs";
+import GraphQL from "./data/code-graphql";
+
 function Data(props) {
   return (
     <>
       <DataContainer>
         <div className="container-inside">
           <DataBox>
-            <Highlighter globalTheme={props.globalTheme} />
+            <Highlighter globalTheme={props.globalTheme} code={datoCMS} />
           </DataBox>
           <DataFlex>
-            <DataItem>1</DataItem>
-            <DataItem>1</DataItem>
+            <DataItem>
+              <Highlighter globalTheme={props.globalTheme} code={NextJS} />
+            </DataItem>
+            <DataItem>
+              <Highlighter globalTheme={props.globalTheme} code={GraphQL} />
+            </DataItem>
           </DataFlex>
         </div>
       </DataContainer>

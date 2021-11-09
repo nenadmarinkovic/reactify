@@ -11,7 +11,24 @@ import Apis from "../components/apis";
 import Design from "../components/design";
 import Footer from "../components/footer";
 
-export default function Home() {
+import { request } from "../lib/datocms";
+
+const DESIGN_ITEMS_QUERY = `{
+  allItems {
+    id
+    name
+    description
+    category
+    homepage
+    link
+    icon {
+      url
+    }
+  }
+}
+`;
+
+export default function Home({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -35,12 +52,22 @@ export default function Home() {
         <Banner toggleTheme={toggleTheme} theme={theme} />
         <Tech theme={theme} />
         <Intro theme={theme} />
-        <Design theme={theme} />
-
+        <Design theme={theme} items={items.allItems} />
         <Data globalTheme={theme} />
         <Apis theme={theme} />
         <Footer theme={theme} />
       </ThemeProvider>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const items = await request({
+    query: DESIGN_ITEMS_QUERY,
+    variables: { limit: 10 },
+  });
+  return {
+    props: { items },
+    revalidate: 10,
+  };
 }

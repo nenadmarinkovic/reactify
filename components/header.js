@@ -47,10 +47,14 @@ function Header({ theme, toggleTheme }) {
           </Logo>
           <HeaderFlex>
             <HeaderLinks>
-              <HeaderLink>Data</HeaderLink>
               <HeaderLink>
               <Link href="/design">
                   <a>Design</a>
+                </Link>
+              </HeaderLink>
+              <HeaderLink>
+              <Link href="/data">
+                  <a>Data</a>
                 </Link>
               </HeaderLink>
               <HeaderLink>

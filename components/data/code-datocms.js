@@ -1,4 +1,7 @@
-const datoCMS = `import { GraphQLClient } from "graphql-request";
+const datoCMS = `
+// GraphQL client pointing to one of our GraphQL Content Delivery API endpoints:
+
+import { GraphQLClient } from "graphql-request";
 
 export function request({ query, variables, preview }) {
   const endpoint = preview

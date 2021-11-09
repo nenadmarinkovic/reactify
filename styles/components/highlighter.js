@@ -11,10 +11,9 @@ border-radius: 10px;
 transition: all 0.25s linear;
 background: ${({ theme }) => theme.itemBackground} !important;
 text-align: left;
-margin: 1em 0;
-padding: 2rem;
+padding: 1rem 1.5rem;
 overflow: scroll;
-border: ${({ theme }) => theme.borderHover};
+
 
 & .token-line {
   line-height: 1.3em;

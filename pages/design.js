@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Banner from "../components/apis/banner";
+import Banner from "../components/design/banner";
+import Items from "../components/design/items";
 import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
@@ -7,22 +8,21 @@ import { lightTheme, darkTheme } from "../styles/theme";
 
 import { request } from "../lib/datocms";
 
-const HOMEPAGE_QUERY = `
-{
+const DESIGN_ITEMS_QUERY = `{
   allItems {
     id
     name
-    _status
-    _firstPublishedAt
-  }
-
-  _allItemsMeta {
-    count
+    description
+    category
+    link
+    icon {
+      url
+    }
   }
 }
 `;
 
-export default function Home({ data }) {
+export default function Home({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -30,12 +30,13 @@ export default function Home({ data }) {
     return <div />;
   }
 
+
   return (
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory</title>
+          <title>Dot Directory | Design</title>
           <meta
             name="description"
             content="Personal web directory for design, data, APIs"
@@ -44,11 +45,7 @@ export default function Home({ data }) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
-        <div className="container">
-          {data.allItems.map((e) => {
-            return <li key={e.id}>{e.name}</li>;
-          })}
-        </div>
+        <Items items={items.allItems} />
 
         {/* <Footer theme={theme} /> */}
       </ThemeProvider>
@@ -57,12 +54,12 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const data = await request({
-    query: HOMEPAGE_QUERY,
+  const items = await request({
+    query: DESIGN_ITEMS_QUERY,
     variables: { limit: 10 },
   });
   return {
-    props: { data },
+    props: { items },
     revalidate: 10,
   };
 }
