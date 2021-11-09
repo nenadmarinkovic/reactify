@@ -44,9 +44,9 @@ function Design({ items }) {
         </IntroText>
         <DesignFlex>
           <DesignItems>
-            {homepageItems.map((item) => {
+            {homepageItems.map((item, index) => {
               return (
-                <DesignItem className="no-ml">
+                <DesignItem className="no-ml" key={index}>
                   <img src={item.icon.url} />
                   <ItemTitle>{item.name}</ItemTitle>
                   <ItemDescription>{item.description}</ItemDescription>
