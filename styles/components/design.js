@@ -12,7 +12,7 @@ export const DesignFlex = styled.div`
   padding-bottom: 120px;
 `;
 
-export const DesignItem = styled.div`
+export const DesignItem = styled.a`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};

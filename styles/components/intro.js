@@ -13,7 +13,7 @@ export const IntroDesign = styled.div`
   font-size: 3.525rem;
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
-  padding: 120px 120px 280px 120px;
+  padding: 60px 120px 280px 120px;
 `;
 
 export const Wrap = styled.div`
@@ -65,6 +65,10 @@ export const LearnMore = styled.div`
   align-items: center;
   font-family: "Studio-Feixen-Sans Regular";
   cursor: pointer;
+
+  a {
+    color: ${({ theme }) => theme.mainText};
+  }
 
   svg {
     margin-top: 2px;

@@ -5,7 +5,7 @@ import {
   DesignItems,
   DesignItem,
 } from "../styles/components/design";
-
+import Link from "next/link";
 import {
   IntroText,
   IntroDesign,
@@ -17,7 +17,6 @@ import { ItemTitle, ItemDescription } from "../styles/components/design/items";
 
 function Design({ items }) {
   const homepageItems = items.filter((item) => item.homepage);
-
   return (
     <DesignWrap>
       <div className="container-inside">
@@ -25,7 +24,7 @@ function Design({ items }) {
           Design
           <HelperText>A list of web design resources for developers</HelperText>
           <LearnMore>
-            <span>Discover more resources</span>
+          <Link href="/design">Discover more resources</Link>
             <svg
               width="8"
               height="14"
@@ -46,7 +45,12 @@ function Design({ items }) {
           <DesignItems>
             {homepageItems.map((item, index) => {
               return (
-                <DesignItem className="no-ml" key={index}>
+                <DesignItem
+                  href={`${item.link}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={index}
+                >
                   <img src={item.icon.url} />
                   <ItemTitle>{item.name}</ItemTitle>
                   <ItemDescription>{item.description}</ItemDescription>
@@ -62,7 +66,7 @@ function Design({ items }) {
           Fetching data from Headless CMS back-end, example using Dato CMS
         </HelperText>
         <LearnMore>
-          <span>Discover more examples</span>
+          <Link href="/data">Discover more examples</Link>
           <svg
             width="8"
             height="14"

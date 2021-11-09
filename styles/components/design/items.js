@@ -6,6 +6,7 @@ export const ItemsContainer = styled.div`
 `;
 
 export const Item = styled.div`
+  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
   width: 300px;
@@ -26,7 +27,7 @@ export const Item = styled.div`
     width: 50px;
     height: 50px;
   }
-  
+
   a {
     color: ${({ theme }) => theme.mainText};
   }

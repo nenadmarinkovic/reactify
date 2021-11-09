@@ -64,6 +64,10 @@ export const LearnMore = styled.div`
   font-family: "Studio-Feixen-Sans Regular";
   cursor: pointer;
 
+  a {
+    color: white;
+  }
+
   svg {
     margin-top: 1px;
     position: relative;

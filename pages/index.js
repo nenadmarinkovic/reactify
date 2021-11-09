@@ -51,11 +51,11 @@ export default function Home({ items }) {
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
         <Tech theme={theme} />
-        <Intro theme={theme} />
-        <Design theme={theme} items={items.allItems} />
+        <Intro />
+        <Design items={items.allItems} />
         <Data globalTheme={theme} />
-        <Apis theme={theme} />
-        <Footer theme={theme} />
+        <Apis />
+        <Footer />
       </ThemeProvider>
     </>
   );

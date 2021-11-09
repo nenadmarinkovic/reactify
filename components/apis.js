@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   ApisContainer,
   ApisTitle,
@@ -7,10 +8,11 @@ import {
   ApisSVG,
   UpText,
   DownText,
-  HelperText, LearnMore
+  HelperText,
+  LearnMore,
 } from "../styles/components/apis";
 
-function Apis({ theme }) {
+function Apis() {
   return (
     <ApisContainer>
       <div className="container-inside">
@@ -20,7 +22,7 @@ function Apis({ theme }) {
             A list of resources for developers and designers
           </HelperText>
           <LearnMore>
-            <span>Discover more resources</span>
+            <Link href="/apis">Discover more resources</Link>
             <svg
               width="8"
               height="14"
