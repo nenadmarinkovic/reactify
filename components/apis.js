@@ -16,6 +16,8 @@ import {
 } from "../styles/components/apis";
 
 function Apis({playing }) {
+  console.log(playing);
+  
   return (
     <ApisContainer>
       <div className="container-inside">
@@ -63,7 +65,7 @@ function Apis({playing }) {
               <SpotifyText>
                 {playing.title ? (
                   <span>
-                    Currently playing: {playing.title} by {playing.artist}
+                    Playing: {playing.title} by {playing.artist}
                   </span>
                 ) : (
                   "Not playing currently"
