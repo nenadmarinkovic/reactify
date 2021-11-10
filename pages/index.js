@@ -77,6 +77,5 @@ export async function getStaticProps() {
 
   return {
     props: { items, playing },
-    revalidate: 10,
   };
 }
