@@ -68,9 +68,7 @@ export async function getStaticProps() {
   let data = [];
   let error = "";
 
-  const server = dev
-    ? "http://localhost:3000/api/playing"
-    : "https://dot.directory/api/playing";
+  const server = "https://dot.directory/api/playing";
 
   try {
     const res = await fetch(server, {
