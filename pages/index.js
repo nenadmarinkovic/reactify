@@ -30,7 +30,7 @@ const DESIGN_ITEMS_QUERY = `{
 
 const dev = process.env.NODE_ENV !== "production";
 
-export default function Home({ items, playing }) {
+export default function Home({ items, error, data }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -40,6 +40,7 @@ export default function Home({ items, playing }) {
 
   return (
     <>
+      {error && <p>{error}</p>}
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
@@ -56,7 +57,7 @@ export default function Home({ items, playing }) {
         <Intro />
         <Design items={items.allItems} />
         <Data globalTheme={theme} />
-        <Apis playing={playing} />
+        <Apis data={data} />
         <Footer />
       </ThemeProvider>
     </>
@@ -64,11 +65,27 @@ export default function Home({ items, playing }) {
 }
 
 export async function getStaticProps() {
+  let data = [];
+  let error = "";
+
   const server = dev
     ? "http://localhost:3000/api/playing"
     : "https://dot.directory/api/playing";
-  const res = await fetch(server);
-  const playing = await res.json();
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    data = await res.json();
+  } catch (e) {
+    error = e.toString();
+  }
 
   const items = await request({
     query: DESIGN_ITEMS_QUERY,
@@ -76,6 +93,6 @@ export async function getStaticProps() {
   });
 
   return {
-    props: { items, playing },
+    props: { items, data },
   };
 }
