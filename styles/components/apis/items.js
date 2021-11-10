@@ -8,8 +8,8 @@ export const ItemsContainer = styled.div`
 export const Item = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
-  width: 300px;
-  margin-bottom: 48px;
+  width: 260px;
+  margin-bottom: 40px;
   padding: 30px;
   text-align: center;
   border-radius: 10px;
