@@ -16,7 +16,7 @@ export const Item = styled.div`
   box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
   border: 1px solid rgba(151, 151, 151, 0.34);
   cursor: pointer;
-  height: 185px;
+  height: 235px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
