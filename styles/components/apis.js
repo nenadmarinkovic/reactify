@@ -26,7 +26,7 @@ export const ApisTitle = styled.div`
 export const ApisBox = styled.div`
   transition: all 0.25s linear;
   text-align: start;
-  width: 40%;
+  width: 45%;
   border-radius: 10px;
   color: white;
 `;
@@ -34,7 +34,7 @@ export const ApisBox = styled.div`
 export const ApisSVG = styled.div``;
 
 export const UpText = styled.div`
-  font-size: 1.325rem;
+  font-size: 1.925rem;
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: #fff;
@@ -44,8 +44,22 @@ export const DownText = styled.div`
   font-size: 1rem;
   font-family: "Studio-Feixen-Sans Book";
   line-height: 1.7;
-  margin: 10px 0;
+  margin: 20px 0;
   color: #fff;
+`;
+
+export const Spotify = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const SpotifyText = styled.div`
+margin-left: 10px;
+`;
+
+export const SpotifyIcon = styled.div`
+  width: 30px;
+  height: 30px;
 `;
 
 export const HelperText = styled.div`

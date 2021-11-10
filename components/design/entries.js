@@ -7,17 +7,16 @@ import {
 } from "../../styles/components/design/items";
 import Fade from "react-reveal/Fade";
 
-import Image from "next/image"
+import Image from "next/image";
 
 function Entries({ list }) {
-console.log(list);
   return (
     <ItemsFlex>
       {list.map((item, index) => (
         <Fade delay={index} key={index}>
           <a href={`${item.link}`} target="_blank" rel="noreferrer">
             <Item>
-              <Image src={item.icon.url} height={50} width={50}/>
+              <Image src={item.icon.url} height={50} width={50} />
               <ItemTitle>{item.name}</ItemTitle>
               <ItemDescription>{item.description}</ItemDescription>
             </Item>

@@ -10,7 +10,7 @@ export const Item = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
   width: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   padding: 30px;
   text-align: center;
   border-radius: 10px;

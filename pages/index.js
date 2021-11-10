@@ -28,7 +28,7 @@ const DESIGN_ITEMS_QUERY = `{
 }
 `;
 
-export default function Home({ items }) {
+export default function Home({ items, playing }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -54,7 +54,7 @@ export default function Home({ items }) {
         <Intro />
         <Design items={items.allItems} />
         <Data globalTheme={theme} />
-        <Apis />
+        <Apis playing={playing} />
         <Footer />
       </ThemeProvider>
     </>
@@ -62,12 +62,16 @@ export default function Home({ items }) {
 }
 
 export async function getStaticProps() {
+  const res = await fetch(`http://localhost:3000/api/playing`);
+  const playing = await res.json();
+
   const items = await request({
     query: DESIGN_ITEMS_QUERY,
     variables: { limit: 10 },
   });
+
   return {
-    props: { items },
+    props: { items, playing },
     revalidate: 10,
   };
 }

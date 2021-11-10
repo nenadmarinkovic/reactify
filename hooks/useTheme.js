@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState();
   const [componentMounted, setComponentMounted] = useState(false);
+
   const setMode = (mode) => {
     window.localStorage.setItem("theme", mode);
     setTheme(mode);
   };
+
+  var date = new Date();
+  var hour = date.getHours();
 
   const toggleTheme = () => {
     if (theme === "dark") {
@@ -18,13 +22,11 @@ export const useTheme = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches &&
-    !localTheme
-      ? setMode("light")
+    (!localTheme && hour >= 19) || hour <= 6
+      ? setMode("dark")
       : localTheme
       ? setTheme(localTheme)
-      : setMode("dark");
+      : setMode("light");
 
     setComponentMounted(true);
   }, []);

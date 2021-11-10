@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: false,
   images: {
-    domains: ["www.datocms-assets.com"],
+    domains: ["www.datocms-assets.com", "i.scdn.co"],
   },
 };
