@@ -24,7 +24,7 @@ function Design({ items }) {
           Design
           <HelperText>A list of web design resources for developers</HelperText>
           <LearnMore>
-          <Link href="/design">Discover more resources</Link>
+            <Link href="/design">Discover more resources</Link>
             <svg
               width="8"
               height="14"
@@ -51,7 +51,12 @@ function Design({ items }) {
                   rel="noreferrer"
                   key={index}
                 >
-                  <img src={item.icon.url} />
+                  <Image
+                    src={item.icon.url}
+                    height={50}
+                    width={50}
+                    alt="Logo"
+                  />
                   <ItemTitle>{item.name}</ItemTitle>
                   <ItemDescription>{item.description}</ItemDescription>
                 </DesignItem>

@@ -62,7 +62,7 @@ export default function Home({ items, playing }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`http://localhost:3000/api/playing`);
+  const res = await fetch(`https://dot.directory/api/playing`);
   const playing = await res.json();
 
   const items = await request({
