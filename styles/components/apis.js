@@ -26,7 +26,7 @@ export const ApisTitle = styled.div`
 export const ApisBox = styled.div`
   transition: all 0.25s linear;
   text-align: start;
-  width: 45%;
+  width: 50%;
   border-radius: 10px;
   color: white;
 `;
@@ -54,7 +54,8 @@ export const Spotify = styled.div`
 `;
 
 export const SpotifyText = styled.div`
-margin-left: 10px;
+  margin-left: 10px;
+  line-height: 1.8;
 `;
 
 export const SpotifyIcon = styled.div`

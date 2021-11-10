@@ -61,10 +61,13 @@ function Apis({ playing }) {
                 </svg>
               </SpotifyIcon>
               <SpotifyText>
-                Currently playing:
-                <span style={{ marginLeft: "5px" }}>
-                  {playing.title} by {playing.artist}
-                </span>
+                {playing.title ? (
+                  <span>
+                    Currently playing: {playing.title} by {playing.artist}
+                  </span>
+                ) : (
+                  "Not playing currently"
+                )}
               </SpotifyText>
             </Spotify>
           </ApisBox>

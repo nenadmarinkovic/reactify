@@ -28,6 +28,8 @@ const DESIGN_ITEMS_QUERY = `{
 }
 `;
 
+const dev = process.env.NODE_ENV !== "production";
+
 export default function Home({ items, playing }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -62,7 +64,10 @@ export default function Home({ items, playing }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`https://dot.directory/api/playing`);
+  const server = dev
+    ? "http://localhost:3000/api/playing"
+    : "https://dot.directory/api/playing";
+  const res = await fetch(server);
   const playing = await res.json();
 
   const items = await request({
