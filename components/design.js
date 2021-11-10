@@ -51,10 +51,10 @@ function Design({ items }) {
                   rel="noreferrer"
                   key={index}
                 >
-                  <Image
+                  <img
                     src={item.icon.url}
-                    height={50}
-                    width={50}
+                    height="50px"
+                    width="50px"
                     alt="Logo"
                   />
                   <ItemTitle>{item.name}</ItemTitle>

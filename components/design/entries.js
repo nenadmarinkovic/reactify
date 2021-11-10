@@ -15,7 +15,7 @@ function Entries({ list }) {
         <Fade delay={index} key={index}>
           <a href={`${item.link}`} target="_blank" rel="noreferrer">
             <Item>
-              <Image src={item.icon.url} height={50} width={50} alt="Logo" />
+              <img src={item.icon.url} height="50px" width="50px" alt="Logo" />
               <ItemTitle>{item.name}</ItemTitle>
               <ItemDescription>{item.description}</ItemDescription>
             </Item>

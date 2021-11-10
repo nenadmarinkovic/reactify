@@ -23,11 +23,6 @@ export const Item = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  img {
-    width: 50px;
-    height: 50px;
-  }
-
   a {
     color: ${({ theme }) => theme.mainText};
   }

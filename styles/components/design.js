@@ -33,11 +33,6 @@ export const DesignItem = styled.a`
   :hover {
     border: ${({ theme }) => theme.borderHover};
   }
-
-  img {
-    width: 50px;
-    height: 50px;
-  }
 `;
 
 export const DesignItems = styled.div`

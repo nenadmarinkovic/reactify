@@ -30,7 +30,6 @@ export default function Home({ items }) {
     return <div />;
   }
 
-
   return (
     <>
       <ThemeProvider theme={themeMode}>
