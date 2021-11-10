@@ -5,7 +5,7 @@ function Footer() {
   return (
     <FooterContainer>
       <div className="container">
-        <svg
+        {/* <svg
           width="64"
           height="43"
           viewBox="0 0 64 43"
@@ -28,7 +28,7 @@ function Footer() {
               fill="#96E6FE"
             />
           </g>
-        </svg>
+        </svg> */}
       </div>
     </FooterContainer>
   );
