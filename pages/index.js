@@ -28,8 +28,6 @@ const DESIGN_ITEMS_QUERY = `{
 }
 `;
 
-const dev = process.env.NODE_ENV !== "production";
-
 export default function Home({ items, error, data }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -40,14 +38,13 @@ export default function Home({ items, error, data }) {
 
   return (
     <>
-      {error && <p>{error}</p>}
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
           <title>Dot Directory</title>
           <meta
             name="description"
-            content="Personal web directory for design, data, APIs"
+            content="Web directory for design, data, APIs."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -57,6 +54,7 @@ export default function Home({ items, error, data }) {
         <Intro />
         <Design items={items.allItems} />
         <Data globalTheme={theme} />
+        {error && <p>{error}</p>}
         <Apis data={data} />
         <Footer />
       </ThemeProvider>

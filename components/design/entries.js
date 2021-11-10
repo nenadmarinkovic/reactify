@@ -6,7 +6,6 @@ import {
   ItemDescription,
 } from "../../styles/components/design/items";
 import Fade from "react-reveal/Fade";
-import Image from "next/image";
 
 function Entries({ list }) {
   return (

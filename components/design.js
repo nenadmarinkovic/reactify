@@ -12,7 +12,6 @@ import {
   HelperText,
   LearnMore,
 } from "../styles/components/intro";
-import Image from "next/image";
 import { ItemTitle, ItemDescription } from "../styles/components/design/items";
 
 function Design({ items }) {
