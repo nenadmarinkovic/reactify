@@ -15,7 +15,7 @@ import {
   SpotifyText,
 } from "../styles/components/apis";
 
-function Apis({ playing }) {
+function Apis({ }) {
   return (
     <ApisContainer>
       <div className="container-inside">
@@ -61,13 +61,13 @@ function Apis({ playing }) {
                 </svg>
               </SpotifyIcon>
               <SpotifyText>
-                {playing.title ? (
+                {/* {playing.title ? (
                   <span>
                     Currently playing: {playing.title} by {playing.artist}
                   </span>
                 ) : (
                   "Not playing currently"
-                )}
+                )} */}
               </SpotifyText>
             </Spotify>
           </ApisBox>
