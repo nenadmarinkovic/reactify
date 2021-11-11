@@ -13,11 +13,10 @@ import {
   Spotify,
   SpotifyIcon,
   SpotifyText,
-  BoldText
+  BoldText,
 } from "../styles/components/apis";
 
 function Apis({ data }) {
-  console.log(data);
   return (
     <ApisContainer>
       <div className="container-inside">
