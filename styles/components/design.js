@@ -25,7 +25,7 @@ export const DesignItem = styled.a`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 295px;
   margin-bottom: 45px;
   box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
   border: 1px solid rgba(151, 151, 151, 0.34);

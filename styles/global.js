@@ -157,4 +157,8 @@ span.token.class-name {
   color: #E6922F !important;
 }
 
+.logo-data-big {
+  width: 180px;
+}
+
 `;

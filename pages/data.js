@@ -1,26 +1,11 @@
 import Head from "next/head";
-import Banner from "../components/design/banner";
-import Items from "../components/design/items";
+import Banner from "../components/data/banner";
 import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
+import Items from "../components/data/items";
 import Footer from "../components/footer";
-import { request } from "../lib/datocms";
-
-const DESIGN_ITEMS_QUERY = `{
-  allItems {
-    id
-    name
-    description
-    category
-    link
-    icon {
-      url
-    }
-  }
-}
-`;
 
 export default function Home({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -35,7 +20,7 @@ export default function Home({ items }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory | Design</title>
+          <title>Dot Directory | Data</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
@@ -44,21 +29,9 @@ export default function Home({ items }) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
-        <Items items={items.allItems} />
-
+        <Items theme={theme}/>
         <Footer theme={theme} />
       </ThemeProvider>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const items = await request({
-    query: DESIGN_ITEMS_QUERY,
-    variables: { limit: 10 },
-  });
-  return {
-    props: { items },
-    revalidate: 10,
-  };
 }

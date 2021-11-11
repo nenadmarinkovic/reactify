@@ -22,6 +22,8 @@ function Items({ items }) {
     <ItemsContainer>
       <div className="container">
         <ButtonCategory button={buttons} filter={filter} />
+      </div>
+      <div className="container-inside">
         <Entries list={list} />
       </div>
     </ItemsContainer>

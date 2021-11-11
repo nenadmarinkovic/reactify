@@ -6,20 +6,22 @@ export const ItemsContainer = styled.div`
 `;
 
 export const Item = styled.div`
+  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
-  width: 295px;
-  margin-bottom: 40px;
+  width: 45%;
+  margin-bottom: 80px;
   padding: 30px;
   text-align: center;
   border-radius: 10px;
   box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
   border: 1px solid rgba(151, 151, 151, 0.34);
   cursor: pointer;
-  height: 210px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
   a {
     color: ${({ theme }) => theme.mainText};
@@ -38,12 +40,24 @@ export const ItemsFlex = styled.div`
   padding: 60px 0 180px 0;
 `;
 
-export const ItemTitle = styled.div`
-  font-family: "Studio-Feixen-Sans Black";
-  font-size: 23px;
+export const Text = styled.div`
+  color: ${({ theme }) => theme.mainText};
+  line-height: 1.7;
+  font-size: 1.325rem;
 `;
 
-export const ItemDescription = styled.div`
-  margin-top: 20px;
-  line-height: 1.7;
+export const Logo = styled.img`
+  pointer-events: none;
+  width: 140px;
 `;
+
+// export const ItemTitle = styled.div`
+//   font-family: "Studio-Feixen-Sans Black";
+//   font-size: 23px;
+//   margin-top: 20px;
+// `;
+
+// export const ItemDescription = styled.div`
+//   margin-top: 20px;
+//   line-height: 1.7;
+// `;

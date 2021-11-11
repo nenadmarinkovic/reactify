@@ -9,7 +9,7 @@ export const Item = styled.div`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
-  width: 260px;
+  width: 295px;
   margin-bottom: 40px;
   padding: 30px;
   text-align: center;
@@ -37,7 +37,7 @@ export const ItemsFlex = styled.div`
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding: 60px 0 180px 0;
 `;
 
 export const ItemTitle = styled.div`

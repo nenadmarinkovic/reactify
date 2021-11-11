@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 import Items from "../components/apis/items";
+import Footer from "../components/footer";
 
 export default function Home({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -29,7 +30,7 @@ export default function Home({ items }) {
 
         <Banner toggleTheme={toggleTheme} theme={theme} />
         <Items items={items.entries} theme={theme} />
-        {/* <Footer theme={theme} /> */}
+        <Footer theme={theme} />
       </ThemeProvider>
     </>
   );
