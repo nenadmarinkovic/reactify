@@ -53,9 +53,23 @@ export const Spotify = styled.div`
   align-items: center;
 `;
 
+export const BoldText = styled.span`
+  font-family: "Studio-Feixen-Sans Black";
+`;
+
 export const SpotifyText = styled.div`
   margin-left: 10px;
   line-height: 1.8;
+
+  a {
+    color: white;
+    margin-left: 5px;
+    transition: all 0.25s linear;
+
+    :hover {
+      color: #08d55a;
+    }
+  }
 `;
 
 export const SpotifyIcon = styled.div`

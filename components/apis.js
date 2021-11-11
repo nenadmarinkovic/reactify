@@ -13,9 +13,11 @@ import {
   Spotify,
   SpotifyIcon,
   SpotifyText,
+  BoldText
 } from "../styles/components/apis";
 
 function Apis({ data }) {
+  console.log(data);
   return (
     <ApisContainer>
       <div className="container-inside">
@@ -46,10 +48,10 @@ function Apis({ data }) {
           <ApisBox>
             <UpText>Using Spotify API with Next.js</UpText>
             <DownText>
-              Experimenting with new technologies and APIs have never been
-              easier! By using Spotify API in your web application, for example,
-              you can display your top tracks, or the track you are currently
-              listening to.
+              Experimenting with new technologies and APIs have has been easier!
+              By using Spotify API in your web application, for example, you can
+              display your top tracks, or the track you are currently listening
+              to.
             </DownText>
             <Spotify>
               <SpotifyIcon>
@@ -63,7 +65,10 @@ function Apis({ data }) {
               <SpotifyText>
                 {data.isPlaying ? (
                   <span>
-                    Playing: {data.title} by {data.artist}
+                    <BoldText>Playing:</BoldText>
+                    <a href={data.songUrl} target="_blank" rel="noreferrer">
+                      {data.title} by {data.artist}
+                    </a>
                   </span>
                 ) : (
                   "Not playing currently"
