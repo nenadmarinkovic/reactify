@@ -158,7 +158,6 @@ span.token.class-name {
 }
 
 .logo-data-big {
-  width: 180px;
+  width: 180px !important;
 }
-
 `;

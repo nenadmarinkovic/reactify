@@ -17,20 +17,7 @@ function Tech({ theme }) {
               theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
             }`}
           ></Logo>
-          <Logo
-            src={`images/icons/${
-              theme == "dark"
-                ? "strapi-dark-theme.svg"
-                : "strapi-light-theme.svg"
-            }`}
-          ></Logo>
-          <Logo
-            className="tech-icon-alt"
-            src={`images/icons/${
-              theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
-            }`}
-          ></Logo>
-          <Logo
+                       <Logo
             className="tech-icon-alt"
             src={`images/icons/${
               theme == "dark"
@@ -38,6 +25,21 @@ function Tech({ theme }) {
                 : "sanity-light-theme.svg"
             }`}
           ></Logo>
+          <Logo
+            src={`images/icons/${
+              theme == "dark"
+                ? "strapi-dark-theme.svg"
+                : "strapi-light-theme.svg"
+            }`}
+          ></Logo>
+   
+          <Logo
+            className="tech-icon-alt"
+            src={`images/icons/${
+              theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
+            }`}
+          ></Logo>
+    
           <Logo
             className="tech-icon"
             src={`images/icons/${

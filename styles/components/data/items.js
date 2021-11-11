@@ -48,7 +48,7 @@ export const Text = styled.div`
 
 export const Logo = styled.img`
   pointer-events: none;
-  width: 140px;
+  width: 130px;
 `;
 
 // export const ItemTitle = styled.div`

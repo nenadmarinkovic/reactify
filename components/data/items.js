@@ -16,12 +16,12 @@ function Items({ theme }) {
             <Logo
               src={`images/icons/${
                 theme == "dark"
-                  ? "strapi-dark-theme.svg"
-                  : "strapi-light-theme.svg"
+                  ? "sanity-dark-theme.svg"
+                  : "sanity-light-theme.svg"
               }`}
             ></Logo>
             <Text>
-              Open source Node.js Headless CMS to easily build customisable APIs.
+              Highly versatile and adaptable platform for structured content.
             </Text>
           </Item>
           <Item>
@@ -34,18 +34,6 @@ function Items({ theme }) {
           </Item>
           <Item>
             <Logo
-              src={`images/icons/${
-                theme == "dark"
-                  ? "sanity-dark-theme.svg"
-                  : "sanity-light-theme.svg"
-              }`}
-            ></Logo>
-            <Text>
-              Highly versatile and adaptable platform for structured content.
-            </Text>
-          </Item>
-          <Item>
-            <Logo
               className="logo-data-big"
               src={`images/icons/${
                 theme == "dark"
@@ -54,6 +42,19 @@ function Items({ theme }) {
               }`}
             ></Logo>
             <Text>The only headless CMS with a visual editor.</Text>
+          </Item>
+          <Item>
+            <Logo
+              src={`images/icons/${
+                theme == "dark"
+                  ? "strapi-dark-theme.svg"
+                  : "strapi-light-theme.svg"
+              }`}
+            ></Logo>
+            <Text>
+              Open source Node.js Headless CMS to easily build customisable
+              APIs.
+            </Text>
           </Item>
         </ItemsFlex>
       </div>
