@@ -12,7 +12,7 @@ import Count from "../components/count";
 function Intro() {
   return (
     <>
-      <Wrap>
+      <Wrap id="intro">
         <div className="container">
           <IntroText>Explore, discover, create</IntroText>
           <FlexItems>

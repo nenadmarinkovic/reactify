@@ -9,6 +9,7 @@ import {
   BannerTextButton,
 } from "../styles/components/banner";
 import Header from "../components/header";
+import { Link } from "react-scroll";
 
 function Banner({ theme, toggleTheme }) {
   return (
@@ -27,7 +28,11 @@ function Banner({ theme, toggleTheme }) {
               tools and technologies that help developers and designers in their
               mission to make the web a better and more beautiful place.
             </BannerTextWrapParagraph>
-            <BannerTextButton>Find out more</BannerTextButton>
+            <BannerTextButton>
+              <Link activeClass="active" to="intro" spy={true} smooth={true}>
+                Find out more
+              </Link>
+            </BannerTextButton>
           </BannerTextWrap>
         </BannerWrap>
       </div>

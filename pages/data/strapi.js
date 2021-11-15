@@ -1,9 +1,15 @@
 import Head from "next/head";
-import Banner from "../../components/apis/banner";
+import Banner from "../../components/data/banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { lightTheme, darkTheme } from "../../styles/theme";
+
+const banner = {
+  title: "Strapi",
+  text:
+    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI and UX design.",
+};
 
 export default function Home({ articles, error }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -22,7 +28,7 @@ export default function Home({ articles, error }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory</title>
+          <title>Dot | Strapi</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
@@ -30,48 +36,48 @@ export default function Home({ articles, error }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Banner toggleTheme={toggleTheme} theme={theme} />
-        {/* <div>
+        <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
+        <div className="container">
           <ul>
             {articles.map((article) => (
               <li key={article.id}>{article.title}</li>
             ))}
           </ul>
-        </div> */}
+        </div>
       </ThemeProvider>
     </>
   );
 }
 
-// Home.getInitialProps = async (ctx) => {
-//   try {
-//     const parseJSON = (resp) => (resp.json ? resp.json() : resp);
-//     const checkStatus = (resp) => {
-//       if (resp.status >= 200 && resp.status < 300) {
-//         return resp;
-//       }
-//       return parseJSON(resp).then((resp) => {
-//         throw resp;
-//       });
-//     };
+Home.getInitialProps = async (ctx) => {
+  try {
+    const parseJSON = (resp) => (resp.json ? resp.json() : resp);
+    const checkStatus = (resp) => {
+      if (resp.status >= 200 && resp.status < 300) {
+        return resp;
+      }
+      return parseJSON(resp).then((resp) => {
+        throw resp;
+      });
+    };
 
-//     const headers = {
-//       "Content-Type": "application/json",
-//     };
+    const headers = {
+      "Content-Type": "application/json",
+    };
 
-//     const articles = await fetch("http://strapi.dot.directory/articles", {
-//       method: "GET",
-//       headers,
-//     })
-//       .then(checkStatus)
-//       .then(parseJSON);
+    const articles = await fetch("http://strapi.dot.directory/articles", {
+      method: "GET",
+      headers,
+    })
+      .then(checkStatus)
+      .then(parseJSON);
 
-//     return {
-//       articles,
-//     };
-//   } catch (error) {
-//     return {
-//       error,
-//     };
-//   }
-// };
+    return {
+      articles,
+    };
+  } catch (error) {
+    return {
+      error,
+    };
+  }
+};
