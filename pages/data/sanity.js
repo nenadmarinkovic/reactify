@@ -9,8 +9,7 @@ const queryPosts = `*[_type == "post"]`;
 
 const banner = {
   title: "Sanity",
-  text:
-    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI and UX design.",
+  text: "Highly versatile and adaptable platform for structured content."
 };
 
 export default function Sanity({ posts }) {

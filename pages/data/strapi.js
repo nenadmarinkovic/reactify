@@ -7,8 +7,7 @@ import { lightTheme, darkTheme } from "../../styles/theme";
 
 const banner = {
   title: "Strapi",
-  text:
-    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI and UX design.",
+  text: "Open source Node.js Headless CMS to easily build customisable APIs.",
 };
 
 export default function Home({ articles, error }) {

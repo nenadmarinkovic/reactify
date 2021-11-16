@@ -10,7 +10,7 @@ const queryPosts = `*[_type == "post"]`;
 const banner = {
   title: "Storyblok",
   text:
-    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI and UX design.",
+    "The only headless CMS with a visual editor.",
 };
 
 export default function Sanity({ posts }) {
