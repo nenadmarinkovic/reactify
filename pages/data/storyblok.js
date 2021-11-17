@@ -13,7 +13,7 @@ const banner = {
   link: "https://storyblok.dot.directory"
 };
 
-export default function Sanity({ posts }) {
+export default function Storyblok({ posts }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
