@@ -11,16 +11,12 @@ const banner = {
   link: "http://strapi.dot.directory/admin",
 };
 
-export default function Home({ articles, error }) {
+export default function Strapi({ articles }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   if (!componentMounted) {
     return <div />;
-  }
-
-  if (error) {
-    return <div>An error occured: {error.message}</div>;
   }
 
   return (
@@ -49,35 +45,29 @@ export default function Home({ articles, error }) {
   );
 }
 
-Home.getInitialProps = async (ctx) => {
-  try {
-    const parseJSON = (resp) => (resp.json ? resp.json() : resp);
-    const checkStatus = (resp) => {
-      if (resp.status >= 200 && resp.status < 300) {
-        return resp;
-      }
-      return parseJSON(resp).then((resp) => {
-        throw resp;
-      });
-    };
+Strapi.getInitialProps = async (ctx) => {
+  const parseJSON = (resp) => (resp.json ? resp.json() : resp);
+  const checkStatus = (resp) => {
+    if (resp.status >= 200 && resp.status < 300) {
+      return resp;
+    }
+    return parseJSON(resp).then((resp) => {
+      throw resp;
+    });
+  };
 
-    const headers = {
-      "Content-Type": "application/json",
-    };
+  const headers = {
+    "Content-Type": "application/json",
+  };
 
-    const articles = await fetch("http://strapi.dot.directory/articles", {
-      method: "GET",
-      headers,
-    })
-      .then(checkStatus)
-      .then(parseJSON);
+  const articles = await fetch("http://strapi.dot.directory/articles", {
+    method: "GET",
+    headers,
+  })
+    .then(checkStatus)
+    .then(parseJSON);
 
-    return {
-      articles,
-    };
-  } catch (error) {
-    return {
-      error,
-    };
-  }
+  return {
+    articles,
+  };
 };
