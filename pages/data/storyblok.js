@@ -9,8 +9,8 @@ const queryPosts = `*[_type == "post"]`;
 
 const banner = {
   title: "Storyblok",
-  text:
-    "The only headless CMS with a visual editor.",
+  text: "The only headless CMS with a visual editor.",
+  link: "https://storyblok.dot.directory"
 };
 
 export default function Sanity({ posts }) {

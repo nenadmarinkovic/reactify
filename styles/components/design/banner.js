@@ -55,9 +55,17 @@ export const BannerTextButton = styled.button`
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
+`;
 
-  /* :hover {
-    background-color: #08d55a;
-    border-color: #08d55a;
-  } */
+export const BannerTextWrapLink = styled.a`
+  color: ${({ theme }) => theme.helperText};
+  font-family: "Studio-Feixen-Sans Bold";
+  font-size: 1.3rem;
+  line-height: 1.7;
+
+  span {
+    font-family: "Studio-Feixen-Sans Book";
+    margin-right: 10px;
+    color: ${({ theme }) => theme.mainText};
+  }
 `;

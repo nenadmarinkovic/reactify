@@ -9,7 +9,8 @@ const queryPosts = `*[_type == "post"]`;
 
 const banner = {
   title: "Sanity",
-  text: "Highly versatile and adaptable platform for structured content."
+  text: "Highly versatile and adaptable platform for structured content.",
+  link: "https://sanity.dot.directory",
 };
 
 export default function Sanity({ posts }) {

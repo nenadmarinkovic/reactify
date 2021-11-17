@@ -3,16 +3,24 @@ import Banner from "../../components/data/banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
-import client from "../../lib/sanity";
+import { request } from "../../lib/datocms";
 import { lightTheme, darkTheme } from "../../styles/theme";
-const queryPosts = `*[_type == "post"]`;
+
+const TEST_ITEMS_QUERY = `{
+  allTests {
+    id
+    text
+  }
+}
+`;
 
 const banner = {
   title: "DatoCMS",
-  text: "The API-based CMS with a customizable interface."
+  text: "The API-based CMS with a customizable interface.",
+  link: "https://datocms.dot.directory",
 };
 
-export default function Sanity({ posts }) {
+export default function DatoCMS({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -31,8 +39,8 @@ export default function Sanity({ posts }) {
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
         <div className="container">
           <ul>
-            {posts.map((post) => (
-              <li key={post._id}>{post.title}</li>
+            {items.allTests.map((item) => (
+              <li key={item.id}>{item.text}</li>
             ))}
           </ul>
         </div>
@@ -41,13 +49,13 @@ export default function Sanity({ posts }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const posts = await client.fetch(queryPosts);
-
+export async function getStaticProps() {
+  const items = await request({
+    query: TEST_ITEMS_QUERY,
+    variables: { limit: 10 },
+  });
   return {
-    props: {
-      posts: posts || null,
-    },
+    props: { items },
     revalidate: 10,
   };
-};
+}

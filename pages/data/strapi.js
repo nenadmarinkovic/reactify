@@ -8,6 +8,7 @@ import { lightTheme, darkTheme } from "../../styles/theme";
 const banner = {
   title: "Strapi",
   text: "Open source Node.js Headless CMS to easily build customisable APIs.",
+  link: "http://strapi.dot.directory/admin",
 };
 
 export default function Home({ articles, error }) {

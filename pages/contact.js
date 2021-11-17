@@ -9,8 +9,7 @@ import Footer from "../components/footer";
 
 const banner = {
   title: "Contact",
-  text:
-    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI and UX design.",
+  text: "Please reach out by filling the form, I'd like to meet you.",
 };
 
 export default function Home({}) {

@@ -55,9 +55,4 @@ export const BannerTextButton = styled.button`
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
-
-  /* :hover {
-    background-color: #08d55a;
-    border-color: #08d55a;
-  } */
 `;
