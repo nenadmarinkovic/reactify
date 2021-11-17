@@ -8,10 +8,16 @@ import { lightTheme, darkTheme } from "../styles/theme";
 import Footer from "../components/footer";
 import { request } from "../lib/datocms";
 
-const TEST_ITEMS_QUERY = `{
-  allTests {
+const DESIGN_ITEMS_QUERY = `{
+  allItems {
     id
-    text
+    name
+    description
+    category
+    link
+    icon {
+      url
+    }
   }
 }
 `;
