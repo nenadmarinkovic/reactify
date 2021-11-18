@@ -30,6 +30,10 @@ export default function Strapi({ articles }) {
             content="Web directory for design, data, APIs."
           />
           <link rel="icon" href="/favicon.ico" />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          />
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
