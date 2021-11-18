@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { request } from "../../lib/datocms";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Posts from "../../components/data/posts";
+import Footer from "../../components/footer"
 
 const TEST_ITEMS_QUERY = `{
   allTests {
@@ -37,13 +39,8 @@ export default function DatoCMS({ items }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <div className="container">
-          <ul>
-            {items.allTests.map((item) => (
-              <li key={item.id}>{item.text}</li>
-            ))}
-          </ul>
-        </div>
+        <Posts datocms={items.allTests} />
+        <Footer/>
       </ThemeProvider>
     </>
   );

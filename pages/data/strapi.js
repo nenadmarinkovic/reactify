@@ -2,8 +2,10 @@ import Head from "next/head";
 import Banner from "../../components/data/banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
+import Posts from "../../components/data/posts";
 import { useTheme } from "../../hooks/useTheme";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Footer from "../../components/footer"
 
 const banner = {
   title: "Strapi",
@@ -37,20 +39,15 @@ export default function Strapi({ articles }) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <div className="container">
-          <ul>
-            {articles.map((article) => (
-              <li key={article.id}>{article.title}</li>
-            ))}
-          </ul>
-        </div>
+        <Posts strapi={articles} />
+        <Footer/>
       </ThemeProvider>
     </>
   );
 }
 
 export async function getStaticProps(context) {
-  const res = await fetch("http://strapi.dot.directory/articles");
+  const res = await fetch("https://dot-strapi.herokuapp.com/articles");
   const articles = await res.json();
 
   if (!articles) {

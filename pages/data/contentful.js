@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import client from "../../lib/contentful";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Posts from "../../components/data/posts";
+import Footer from "../../components/footer"
 
 const banner = {
   title: "Contentful",
@@ -30,13 +32,8 @@ export default function Contentful({ items }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <div className="container">
-          <ul>
-            {items.map((post) => (
-              <li key={post.sys.id}>{post.fields.title}</li>
-            ))}
-          </ul>
-        </div>
+        <Posts contentful={items} />
+        <Footer/>
       </ThemeProvider>
     </>
   );

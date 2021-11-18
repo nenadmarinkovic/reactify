@@ -5,6 +5,9 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import client from "../../lib/sanity";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Posts from "../../components/data/posts";
+import Footer from "../../components/footer"
+
 const queryPosts = `*[_type == "post"]`;
 
 const banner = {
@@ -30,13 +33,8 @@ export default function Sanity({ posts }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <div className="container">
-          <ul>
-            {posts.map((post) => (
-              <li key={post._id}>{post.title}</li>
-            ))}
-          </ul>
-        </div>
+        <Posts sanity={posts} />
+        <Footer/>
       </ThemeProvider>
     </>
   );

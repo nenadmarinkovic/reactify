@@ -75,6 +75,11 @@ input {
   appearance: none;
 }
 
+ul, li {
+  list-style-type: none;
+  line-height: 1.7;
+}
+
 a {
   text-decoration: none;
 }
