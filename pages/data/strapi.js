@@ -49,11 +49,20 @@ export default function Strapi({ articles }) {
   );
 }
 
-Strapi.getInitialProps = async (ctx) => {
+export async function getStaticProps(context) {
   const res = await fetch("http://strapi.dot.directory/articles");
-  const data = await res.json();
+  const articles = await res.json();
+
+  if (!articles) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
 
   return {
-    articles: data,
+    props: { articles }, // will be passed to the page component as props
   };
-};
+}
