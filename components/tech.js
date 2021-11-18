@@ -12,12 +12,20 @@ function Tech({ theme }) {
             }`}
           ></Logo>
           <Logo
-          className="tech-icon-alt"
+            className="tech-icon-alt"
             src={`images/icons/${
               theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
             }`}
           ></Logo>
-                       <Logo
+          <Logo
+            className="tech-icon"
+            src={`images/icons/${
+              theme == "dark"
+                ? "contentful-dark-theme.svg"
+                : "contentful-light-theme.svg"
+            }`}
+          ></Logo>
+          <Logo
             className="tech-icon-alt"
             src={`images/icons/${
               theme == "dark"
@@ -26,26 +34,16 @@ function Tech({ theme }) {
             }`}
           ></Logo>
           <Logo
-            src={`images/icons/${
-              theme == "dark"
-                ? "strapi-dark-theme.svg"
-                : "strapi-light-theme.svg"
-            }`}
-          ></Logo>
-   
-          <Logo
             className="tech-icon-alt"
             src={`images/icons/${
               theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
             }`}
           ></Logo>
-    
           <Logo
-            className="tech-icon"
             src={`images/icons/${
               theme == "dark"
-                ? "storyblok-dark-theme.svg"
-                : "storyblok-light-theme.svg"
+                ? "strapi-dark-theme.svg"
+                : "strapi-light-theme.svg"
             }`}
           ></Logo>
         </TechContainer>

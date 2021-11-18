@@ -13,6 +13,22 @@ function Items({ theme }) {
     <ItemsContainer>
       <div className="container-inside">
         <ItemsFlex>
+          <Link href="data/contentful">
+            <Item>
+              <Logo
+                className="logo-data-big"
+                src={`images/icons/${
+                  theme == "dark"
+                    ? "contentful-dark-theme.svg"
+                    : "contentful-light-theme.svg"
+                }`}
+              ></Logo>
+              <Text>
+                API-first, cloud-native SaaS for complex and diverse business
+                needs.
+              </Text>
+            </Item>
+          </Link>
           <Link href="data/sanity">
             <Item>
               <Logo
@@ -39,21 +55,7 @@ function Items({ theme }) {
               <Text>The API-based CMS with a customizable interface.</Text>
             </Item>
           </Link>
-          <Link href="data/contentful">
-            <Item>
-              <Logo
-                className="logo-data-big"
-                src={`images/icons/${
-                  theme == "dark"
-                    ? "storyblok-dark-theme.svg"
-                    : "storyblok-light-theme.svg"
-                }`}
-              ></Logo>
-              <Text>
-                API-first, cloud-native SaaS for complex and diverse business needs.
-              </Text>
-            </Item>
-          </Link>
+
           <Link href="data/strapi">
             <Item>
               <Logo
