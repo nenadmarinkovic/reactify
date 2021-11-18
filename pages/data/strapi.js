@@ -63,6 +63,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { articles }, // will be passed to the page component as props
+    props: { articles },
+    regenerate: 10
   };
 }
