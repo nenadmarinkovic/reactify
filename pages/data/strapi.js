@@ -46,8 +46,8 @@ export default function Strapi({ articles }) {
 }
 
 Strapi.getInitialProps = async (ctx) => {
-  const articles = await fetch("http://strapi.dot.directory/articles");
-  const data = await articles.json();
+  const res = await fetch("http://strapi.dot.directory/articles");
+  const data = await res.json();
 
   return {
     articles: data,
