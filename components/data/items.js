@@ -39,7 +39,7 @@ function Items({ theme }) {
               <Text>The API-based CMS with a customizable interface.</Text>
             </Item>
           </Link>
-          <Link href="data/storyblok">
+          <Link href="data/contentful">
             <Item>
               <Logo
                 className="logo-data-big"
@@ -49,7 +49,9 @@ function Items({ theme }) {
                     : "storyblok-light-theme.svg"
                 }`}
               ></Logo>
-              <Text>The only headless CMS with a visual editor.</Text>
+              <Text>
+                API-first, cloud-native SaaS for complex and diverse business needs.
+              </Text>
             </Item>
           </Link>
           <Link href="data/strapi">

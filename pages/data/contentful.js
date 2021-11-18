@@ -3,17 +3,17 @@ import Banner from "../../components/data/banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
-import client from "../../lib/sanity";
+import client from "../../lib/contentful";
 import { lightTheme, darkTheme } from "../../styles/theme";
-const queryPosts = `*[_type == "post"]`;
 
 const banner = {
-  title: "Storyblok",
-  text: "The only headless CMS with a visual editor.",
-  link: "https://storyblok.dot.directory"
+  title: "Contentful",
+  text:
+    "  API-first, cloud-native SaaS for complex and diverse business needs.",
+  link: "https://contentful.dot.directory",
 };
 
-export default function Storyblok({ posts }) {
+export default function Contentful({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -22,7 +22,7 @@ export default function Storyblok({ posts }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | Storyblok</title>
+          <title>Dot | Contentful</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
@@ -32,8 +32,8 @@ export default function Storyblok({ posts }) {
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
         <div className="container">
           <ul>
-            {posts.map((post) => (
-              <li key={post._id}>{post.title}</li>
+            {items.map((post) => (
+              <li key={post.sys.id}>{post.fields.title}</li>
             ))}
           </ul>
         </div>
@@ -43,12 +43,11 @@ export default function Storyblok({ posts }) {
 }
 
 export const getStaticProps = async () => {
-  const posts = await client.fetch(queryPosts);
+  const data = await client.getEntries();
 
   return {
     props: {
-      posts: posts || null,
+      items: data.items,
     },
-    revalidate: 10,
   };
 };
