@@ -46,33 +46,10 @@ export default function Strapi({ articles }) {
 }
 
 Strapi.getInitialProps = async (ctx) => {
-  const parseJSON = (resp) => (resp.json ? resp.json() : resp);
-  const checkStatus = (resp) => {
-    if (resp.status >= 200 && resp.status < 300) {
-      return resp;
-    }
-    return parseJSON(resp).then((resp) => {
-      throw resp;
-    });
-  };
-
-  const headers = {
-    // Insecure, use only for testing
-    
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET",
-    "Content-Security-Policy": "upgrade-insecure-requests", 
-  };
-
-  const articles = await fetch("http://strapi.dot.directory/articles", {
-    method: "GET",
-    headers,
-  })
-    .then(checkStatus)
-    .then(parseJSON);
+  const articles = await fetch("http://strapi.dot.directory/articles");
+  const data = await articles.json();
 
   return {
-    articles,
+    articles: data,
   };
 };
