@@ -58,6 +58,8 @@ Strapi.getInitialProps = async (ctx) => {
 
   const headers = {
     "Content-Type": "application/json",
+    "Content-Security-Policy": "upgrade-insecure-requests"
+   
   };
 
   const articles = await fetch("http://strapi.dot.directory/articles", {

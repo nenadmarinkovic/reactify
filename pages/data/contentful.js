@@ -10,7 +10,7 @@ const banner = {
   title: "Contentful",
   text:
     "  API-first, cloud-native SaaS for complex and diverse business needs.",
-  link: "https://contentful.dot.directory",
+  link: "https://app.contentful.com",
 };
 
 export default function Contentful({ items }) {
