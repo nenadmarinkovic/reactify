@@ -5,13 +5,17 @@ import { ThemeProvider } from "styled-components";
 import Posts from "../../components/data/posts";
 import { useTheme } from "../../hooks/useTheme";
 import { lightTheme, darkTheme } from "../../styles/theme";
-import Footer from "../../components/footer"
+import Footer from "../../components/footer";
 
 const banner = {
   title: "Strapi",
   text: "Open source Node.js Headless CMS to easily build customisable APIs.",
   link: "http://strapi.dot.directory/admin",
 };
+const dev = process.env.NODE_ENV !== "production";
+const server = dev
+  ? "http://localhost:1337"
+  : "https://dot-strapi.herokuapp.com";
 
 export default function Strapi({ articles }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -20,6 +24,8 @@ export default function Strapi({ articles }) {
   if (!componentMounted) {
     return <div />;
   }
+
+  console.log(articles);
 
   return (
     <>
@@ -40,24 +46,15 @@ export default function Strapi({ articles }) {
 
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
         <Posts strapi={articles} />
-        <Footer/>
+        <Footer />
       </ThemeProvider>
     </>
   );
 }
 
 export async function getStaticProps(context) {
-  const res = await fetch("https://dot-strapi.herokuapp.com/articles");
+  const res = await fetch(`${server}/articles`);
   const articles = await res.json();
-
-  if (!articles) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
 
   return {
     props: { articles },

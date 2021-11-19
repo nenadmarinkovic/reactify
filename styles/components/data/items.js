@@ -50,14 +50,3 @@ export const Logo = styled.img`
   pointer-events: none;
   width: 130px;
 `;
-
-// export const ItemTitle = styled.div`
-//   font-family: "Studio-Feixen-Sans Black";
-//   font-size: 23px;
-//   margin-top: 20px;
-// `;
-
-// export const ItemDescription = styled.div`
-//   margin-top: 20px;
-//   line-height: 1.7;
-// `;

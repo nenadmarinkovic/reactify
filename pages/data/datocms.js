@@ -6,12 +6,16 @@ import { useTheme } from "../../hooks/useTheme";
 import { request } from "../../lib/datocms";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Posts from "../../components/data/posts";
-import Footer from "../../components/footer"
+import Footer from "../../components/footer";
 
 const TEST_ITEMS_QUERY = `{
-  allTests {
+  allTests(orderBy: _createdAt_ASC) {
     id
     text
+    description
+    image {
+      url
+    }
   }
 }
 `;
@@ -40,7 +44,7 @@ export default function DatoCMS({ items }) {
         </Head>
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
         <Posts datocms={items.allTests} />
-        <Footer/>
+        <Footer />
       </ThemeProvider>
     </>
   );

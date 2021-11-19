@@ -4,21 +4,34 @@ export const PostsContainer = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.mainText};
   transition: all 0.25s linear;
-  height: 70vh;
-`;
-
-export const PostItem = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const PostsFlex = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
+export const PostItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  margin-bottom: 65px;
+
+  p {
+    width: 320px;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+`;
+
+export const PostTitle = styled.div`
+  font-family: "Studio-Feixen-Sans Black";
+  font-size: 18px;
+  margin-top: 25px;
 `;
 
 export const PostImage = styled.img`
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  border-radius: 10px;
 `;
