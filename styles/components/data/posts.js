@@ -10,6 +10,7 @@ export const PostsFlex = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 60px 0 180px 0;
 `;
 
 export const PostItem = styled.div`
