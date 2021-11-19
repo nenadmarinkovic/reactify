@@ -17,9 +17,9 @@ const banner = {
 };
 
 const stats = {
-  speed: 5,
+  speed: 4,
   design: 6,
-  customization: 9,
+  customization: 8,
   experience: 9,
   usability: 10,
 };

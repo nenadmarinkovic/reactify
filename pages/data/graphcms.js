@@ -17,11 +17,11 @@ const banner = {
 };
 
 const stats = {
-  speed: 9,
+  speed: 7,
   design: 10,
   customization: 5,
-  experience: 10,
-  usability: 9,
+  experience: 9,
+  usability: 10,
 };
 
 const server = process.env.GRAPHQL_URL_ENDPOINT;

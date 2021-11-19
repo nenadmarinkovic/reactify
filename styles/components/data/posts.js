@@ -40,8 +40,9 @@ export const PostImage = styled.img`
 export const Centered = styled.div`
   transition: all 0.25s linear;
   font-family: "Studio-Feixen-Sans Book";
-  font-size: 1.525rem;
+  font-size: 1.3rem;
   padding: 15px 0 25px 0;
   text-align: center;
   color: ${({ theme }) => theme.mainText};
+  line-height: 1.7;
 `;

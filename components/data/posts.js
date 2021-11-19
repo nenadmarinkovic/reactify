@@ -22,8 +22,9 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
     <PostsContainer>
       <div className="container-inside">
         <Centered>
-          Data (item model with title, description, image) dynamically fetched
-          from {title}:
+          Item model with title, description, and image field
+          <br></br>
+          dynamically fetched from {title}:
         </Centered>
         <PostsFlex>
           {datocms?.map((item) => (
@@ -53,7 +54,9 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
 
           {sanity?.map((item) => (
             <PostItem key={item._id}>
-              <PostImage src={urlFor(item.mainImage).url()} />
+              {item.mainImage && (
+                <PostImage src={urlFor(item.mainImage).url()} />
+              )}
               <PostTitle>{item.title}</PostTitle>
               <BlockContent
                 blocks={item.body}
