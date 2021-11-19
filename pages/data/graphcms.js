@@ -16,7 +16,9 @@ const banner = {
   link: "https://app.graphcms.com",
 };
 
-const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
+const server = process.env.GRAPHQL_URL_ENDPOINT;
+
+const graphcms = new GraphQLClient(server);
 
 export default function GraphCMS({ posts }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
