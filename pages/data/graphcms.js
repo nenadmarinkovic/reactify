@@ -17,7 +17,6 @@ const banner = {
 };
 
 const server = process.env.GRAPHQL_URL_ENDPOINT;
-
 const graphcms = new GraphQLClient(server);
 
 export default function GraphCMS({ posts }) {

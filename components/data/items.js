@@ -67,8 +67,8 @@ function Items({ theme }) {
                 }`}
               ></Logo>
               <Text>
-                Open source Node.js Headless CMS to easily build customisable
-                APIs.
+                Instant GraphQL Content APIs to create, enrich, unify, and
+                deliver your content.
               </Text>
             </Item>
           </Link>
