@@ -17,7 +17,6 @@ function urlFor(source) {
 }
 
 function Posts({ contentful, datocms, sanity, strapi }) {
-  console.log(contentful);
   return (
     <PostsContainer>
       <div className="container-inside">
@@ -39,7 +38,14 @@ function Posts({ contentful, datocms, sanity, strapi }) {
           ))}
 
           {strapi?.map((item) => (
-            <PostItem key={item.id}>{item.title}</PostItem>
+            <PostItem key={item.id}>
+              <PostImage
+                src={`https://dot-strapi.herokuapp.com${item.image.url} `}
+              />
+
+              <PostTitle>{item.title}</PostTitle>
+              <p>{item.description}</p>
+            </PostItem>
           ))}
 
           {sanity?.map((item) => (

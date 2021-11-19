@@ -12,10 +12,8 @@ const banner = {
   text: "Open source Node.js Headless CMS to easily build customisable APIs.",
   link: "http://strapi.dot.directory/admin",
 };
-const dev = process.env.NODE_ENV !== "production";
-const server = dev
-  ? "http://localhost:1337"
-  : "https://dot-strapi.herokuapp.com";
+
+const server = "https://dot-strapi.herokuapp.com";
 
 export default function Strapi({ articles }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -24,8 +22,6 @@ export default function Strapi({ articles }) {
   if (!componentMounted) {
     return <div />;
   }
-
-  console.log(articles);
 
   return (
     <>

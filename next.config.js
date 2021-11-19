@@ -6,6 +6,7 @@ module.exports = {
       "i.scdn.co",
       "cdn.sanity.io",
       "images.ctfassets.net",
+      "dot-strapi.herokuapp.com"
     ],
   },
 };
