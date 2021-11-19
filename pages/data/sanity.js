@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Banner from "../../components/data/banner";
+import Banner from "../../components/data/cms-banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";

@@ -16,7 +16,9 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-function Posts({ contentful, datocms, sanity, strapi }) {
+function Posts({ contentful, datocms, sanity, graphcms }) {
+
+  console.log(graphcms);
   return (
     <PostsContainer>
       <div className="container-inside">
@@ -37,10 +39,10 @@ function Posts({ contentful, datocms, sanity, strapi }) {
             </PostItem>
           ))}
 
-          {strapi?.map((item) => (
+          {graphcms?.map((item) => (
             <PostItem key={item.id}>
               <PostImage
-                src={`https://dot-strapi.herokuapp.com${item.image.url} `}
+                src={item.image.url}
               />
 
               <PostTitle>{item.title}</PostTitle>

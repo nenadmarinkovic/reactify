@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Banner from "../../components/data/banner";
+import Banner from "../../components/data/cms-banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import Posts from "../../components/data/posts";
@@ -7,15 +7,18 @@ import { useTheme } from "../../hooks/useTheme";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Footer from "../../components/footer";
 
+import { GraphQLClient } from "graphql-request";
+
 const banner = {
-  title: "Strapi",
-  text: "Open source Node.js Headless CMS to easily build customisable APIs.",
-  link: "http://strapi.dot.directory/admin",
+  title: "GraphCMS",
+  text:
+    "GraphCMS gives you instant GraphQL Content APIs to create, enrich, unify, and deliver your content across platforms.",
+  link: "https://app.graphcms.com",
 };
 
-const server = "https://dot-strapi.herokuapp.com";
+const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
-export default function Strapi({ articles }) {
+export default function GraphCMS({ posts }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -28,7 +31,7 @@ export default function Strapi({ articles }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | Strapi</title>
+          <title>Dot | GraphCMS</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
@@ -41,19 +44,32 @@ export default function Strapi({ articles }) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <Posts strapi={articles} />
+        <Posts graphcms={posts} />
         <Footer />
       </ThemeProvider>
     </>
   );
 }
 
-export async function getStaticProps(context) {
-  const res = await fetch(`${server}/articles`);
-  const articles = await res.json();
+export async function getStaticProps() {
+  const { posts } = await graphcms.request(
+    `
+    query Posts() {
+      posts {
+        id
+        title
+        description
+        image {
+          url
+        }
+      }
+    }
+  `
+  );
 
   return {
-    props: { articles },
-    revalidate: 10,
+    props: {
+      posts,
+    },
   };
 }

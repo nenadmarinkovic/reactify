@@ -42,8 +42,8 @@ function Tech({ theme }) {
           <Logo
             src={`images/icons/${
               theme == "dark"
-                ? "strapi-dark-theme.svg"
-                : "strapi-light-theme.svg"
+                ? "graphcms-dark-theme.svg"
+                : "graphcms-light-theme.svg"
             }`}
           ></Logo>
         </TechContainer>

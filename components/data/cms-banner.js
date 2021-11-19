@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import {
   BannerContainer,
   BannerWrap,
@@ -7,13 +8,16 @@ import {
   BannerTextTitle,
   BannerTextWrapParagraph,
   BannerTextWrapLink,
-} from "../../styles/components/design/banner";
+} from "../../styles/components/data/cms-banner";
 import Header from "../../components/header";
+import Stats from "../cms-stats";
 
 function Banner({ banner, theme, toggleTheme }) {
   if (banner.link) {
     var noProtocol = banner.link.replace(/^https?\:\/\//i, "");
   }
+
+  const router = useRouter();
 
   return (
     <BannerContainer>
@@ -38,9 +42,7 @@ function Banner({ banner, theme, toggleTheme }) {
               ""
             )}
           </BannerTextWrap>
-
-
-          
+          <Stats theme={theme} />
         </BannerWrap>
       </div>
     </BannerContainer>

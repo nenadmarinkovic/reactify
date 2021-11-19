@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Banner from "../../components/data/banner";
+import Banner from "../../components/data/cms-banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import client from "../../lib/contentful";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Posts from "../../components/data/posts";
-import Footer from "../../components/footer"
+import Footer from "../../components/footer";
 
 const banner = {
   title: "Contentful",
@@ -15,11 +15,17 @@ const banner = {
   link: "https://app.contentful.com",
 };
 
+const stats = {
+  speed: 8,
+  design: 9,
+  customization: 6,
+  experience: 8,
+  usability: 7,
+};
+
 export default function Contentful({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-
-  console.log(items);
 
   return (
     <>
@@ -35,7 +41,7 @@ export default function Contentful({ items }) {
         </Head>
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
         <Posts contentful={items} />
-        <Footer/>
+        <Footer />
       </ThemeProvider>
     </>
   );

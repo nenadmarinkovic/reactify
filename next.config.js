@@ -5,8 +5,7 @@ module.exports = {
       "www.datocms-assets.com",
       "i.scdn.co",
       "cdn.sanity.io",
-      "images.ctfassets.net",
-      "dot-strapi.herokuapp.com"
+      "images.ctfassets.net"
     ],
   },
 };
