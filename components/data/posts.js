@@ -18,7 +18,6 @@ function urlFor(source) {
 
 function Posts({ contentful, datocms, sanity, graphcms }) {
 
-  console.log(graphcms);
   return (
     <PostsContainer>
       <div className="container-inside">
