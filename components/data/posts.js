@@ -7,6 +7,7 @@ import {
   PostItem,
   PostImage,
   PostTitle,
+  Centered,
 } from "../../styles/components/data/posts";
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -16,11 +17,11 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-function Posts({ contentful, datocms, sanity, graphcms }) {
-
+function Posts({ title, contentful, datocms, sanity, graphcms }) {
   return (
     <PostsContainer>
       <div className="container-inside">
+        <Centered>Dynamic data fetching from {title}:</Centered>
         <PostsFlex>
           {datocms?.map((item) => (
             <PostItem key={item.id}>
@@ -40,9 +41,7 @@ function Posts({ contentful, datocms, sanity, graphcms }) {
 
           {graphcms?.map((item) => (
             <PostItem key={item.id}>
-              <PostImage
-                src={item.image.url}
-              />
+              <PostImage src={item.image.url} />
 
               <PostTitle>{item.title}</PostTitle>
               <p>{item.description}</p>

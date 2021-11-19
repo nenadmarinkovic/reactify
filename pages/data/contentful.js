@@ -10,16 +10,15 @@ import Footer from "../../components/footer";
 
 const banner = {
   title: "Contentful",
-  text:
-    "  API-first, cloud-native SaaS for complex and diverse business needs.",
+  text: "API-first, cloud-native SaaS for complex and diverse business needs.",
   link: "https://app.contentful.com",
 };
 
 const stats = {
-  speed: 8,
-  design: 9,
-  customization: 6,
-  experience: 8,
+  speed: 7,
+  design: 8,
+  customization: 5,
+  experience: 10,
   usability: 7,
 };
 
@@ -39,8 +38,13 @@ export default function Contentful({ items }) {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <Posts contentful={items} />
+        <Banner
+          toggleTheme={toggleTheme}
+          theme={theme}
+          banner={banner}
+          stats={stats}
+        />
+        <Posts contentful={items} title={banner.title} />
         <Footer />
       </ThemeProvider>
     </>

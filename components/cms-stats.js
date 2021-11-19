@@ -6,7 +6,7 @@ let statsDark = ["rgba(8,213,90, 0.3)"];
 let borderLight = ["rgba(42,60,224, 1)"];
 let borderDark = ["rgba(8,213,90, 1)"];
 
-function Stats({ theme, graphcms, contentful, datocms, sanity }) {
+function Stats({ theme, stats }) {
   const data = {
     labels: [
       "Speed",
@@ -17,7 +17,14 @@ function Stats({ theme, graphcms, contentful, datocms, sanity }) {
     ],
     datasets: [
       {
-        data: [12, 19, 3, 5, 2, 3],
+        data: [
+          stats.speed,
+          stats.design,
+          stats.customization,
+          stats.experience,
+          stats.usability,
+        ],
+
         backgroundColor: theme == "light" ? statsLight : statsDark,
         borderColor: theme == "light" ? borderLight : borderDark,
         borderWidth: 2,

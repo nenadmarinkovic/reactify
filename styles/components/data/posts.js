@@ -33,6 +33,15 @@ export const PostTitle = styled.div`
 `;
 
 export const PostImage = styled.img`
-  height: 350px;
+  height: 285px;
   border-radius: 10px;
+`;
+
+export const Centered = styled.div`
+  transition: all 0.25s linear;
+  font-family: "Studio-Feixen-Sans Book";
+  font-size: 1.525rem;
+  padding: 15px 0 25px 0;
+  text-align: center;
+  color: ${({ theme }) => theme.mainText};
 `;

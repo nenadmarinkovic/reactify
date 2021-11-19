@@ -16,6 +16,14 @@ const banner = {
   link: "https://app.graphcms.com",
 };
 
+const stats = {
+  speed: 9,
+  design: 10,
+  customization: 5,
+  experience: 10,
+  usability: 9,
+};
+
 const server = process.env.GRAPHQL_URL_ENDPOINT;
 const graphcms = new GraphQLClient(server);
 
@@ -44,8 +52,13 @@ export default function GraphCMS({ posts }) {
           />
         </Head>
 
-        <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <Posts graphcms={posts} />
+        <Banner
+          toggleTheme={toggleTheme}
+          theme={theme}
+          banner={banner}
+          stats={stats}
+        />
+        <Posts graphcms={posts} title={banner.title} />
         <Footer />
       </ThemeProvider>
     </>

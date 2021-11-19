@@ -26,6 +26,14 @@ const banner = {
   link: "https://datocms.dot.directory",
 };
 
+const stats = {
+  speed: 6,
+  design: 9,
+  customization: 9,
+  experience: 10,
+  usability: 6,
+};
+
 export default function DatoCMS({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -42,8 +50,13 @@ export default function DatoCMS({ items }) {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-        <Posts datocms={items.allTests} />
+        <Banner
+          toggleTheme={toggleTheme}
+          theme={theme}
+          banner={banner}
+          stats={stats}
+        />
+        <Posts datocms={items.allTests} title={banner.title} />
         <Footer />
       </ThemeProvider>
     </>

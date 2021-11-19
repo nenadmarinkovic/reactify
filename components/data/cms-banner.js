@@ -12,12 +12,10 @@ import {
 import Header from "../../components/header";
 import Stats from "../cms-stats";
 
-function Banner({ banner, theme, toggleTheme }) {
+function Banner({ stats, banner, theme, toggleTheme }) {
   if (banner.link) {
     var noProtocol = banner.link.replace(/^https?\:\/\//i, "");
   }
-
-  const router = useRouter();
 
   return (
     <BannerContainer>
@@ -42,7 +40,7 @@ function Banner({ banner, theme, toggleTheme }) {
               ""
             )}
           </BannerTextWrap>
-          <Stats theme={theme} />
+          <Stats theme={theme} stats={stats} />
         </BannerWrap>
       </div>
     </BannerContainer>
