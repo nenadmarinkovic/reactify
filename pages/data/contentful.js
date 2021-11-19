@@ -26,6 +26,10 @@ export default function Contentful({ items }) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
+  if (!componentMounted) {
+    return <div />;
+  }
+
   return (
     <>
       <ThemeProvider theme={themeMode}>
