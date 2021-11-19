@@ -21,7 +21,10 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
   return (
     <PostsContainer>
       <div className="container-inside">
-        <Centered>Dynamic data fetching from {title}:</Centered>
+        <Centered>
+          Data (item model with title, description, image) dynamically fetched
+          from {title}:
+        </Centered>
         <PostsFlex>
           {datocms?.map((item) => (
             <PostItem key={item.id}>
