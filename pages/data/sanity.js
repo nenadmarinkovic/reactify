@@ -37,7 +37,7 @@ export default function Sanity({ posts }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | Sanity</title>
+          <title>Dot | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."

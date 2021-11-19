@@ -47,7 +47,7 @@ export default function DatoCMS({ items }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | DatoCMS</title>
+          <title>Dot | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."

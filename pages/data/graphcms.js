@@ -40,7 +40,7 @@ export default function GraphCMS({ posts }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | GraphCMS</title>
+          <title>Dot | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."

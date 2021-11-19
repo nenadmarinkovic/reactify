@@ -35,7 +35,7 @@ export default function Contentful({ items }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | Contentful</title>
+          <title>Dot | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
