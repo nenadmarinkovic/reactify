@@ -12,7 +12,7 @@ export const BannerWrap = styled.div`
 export const BannerTextWrap = styled.div`
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 50%;
 `;
 
 export const BannerTextWrapTop = styled.div`
