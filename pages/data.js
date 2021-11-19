@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 const banner = {
   title: "Data",
   text:
-    "A list of commonly used Content Management Systems that makes content accessible via a REST or GraphQL API for display on any device. With real data fetching for testing speed, UI/UX design, developer's experience, and general usability.",
+    "Commonly used headless CMS that makes content accessible via a REST or GraphQL API. With real data fetching for testing speed, UI/UX design, developer's experience, and general usability.",
 };
 
 export default function Home({ items }) {
