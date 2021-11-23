@@ -4,12 +4,12 @@ import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
-
+import Form from "../components/form"
 import Footer from "../components/footer";
 
 const banner = {
   title: "Contact",
-  text: "Please reach out by filling the form, I'd like to meet you.",
+  text: "Please reach out by filling the form.",
 };
 
 export default function Home({}) {
@@ -34,7 +34,7 @@ export default function Home({}) {
         </Head>
 
         <Banner toggleTheme={toggleTheme} theme={theme} banner={banner} />
-
+        <Form />
         <Footer theme={theme} />
       </ThemeProvider>
     </>
