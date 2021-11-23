@@ -22,6 +22,8 @@ export const FormContainer = styled.form`
 export const FormLabel = styled.label`
   color: ${({ theme }) => theme.helperText};
   font-size: 14px;
+  font-family: "Studio-Feixen-Sans Bold";
+  letter-spacing: 0.3px;
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
