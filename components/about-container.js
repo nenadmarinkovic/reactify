@@ -14,22 +14,15 @@ function AboutContainer() {
         <ContainerFlex>
           <Text>
             <p>
-              Dot Directory is an open-source web directory with different
-              purposes and goals. It serves as a personal collection of design
-              resources handpicked around the web, tool for testing various
-              content-management systems, and as a web application for playing
-              with different APIs.
+              Dot Directory is an open-source collection of useful design
+              resources handpicked around the web, a place for testing different
+              content management systems around Next.js and React ecosystem, and
+              a playground for trying out different APIs.
             </p>
             <p>
-              As such, Dot Directory is a constant work in progress and a
-              personal playground for testing and experimenting with different
-              tools and technologies around React and Next.js on the front-end,
-              and various headless platforms for storing and manipulating data
-              on the back-end.
-            </p>
-            <p>
-              Only after testing them, one can have confidence of recommending
-              those tools and technologies to other developers and clients.
+              Dot Directory helps developers and designers find the best tools
+              and technologies for their job. As such, the purpose of the
+              project is to make the web a better and more beautiful place.
             </p>
             <p>
               The creator of Dot Directory is{" "}

@@ -9,6 +9,7 @@ export const Container = styled.div`
 export const Image = styled.div`
   @media (max-width: 768px) {
     text-align: center;
+    margin-top: 40px
   }
 `;
 
