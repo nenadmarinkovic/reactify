@@ -21,6 +21,10 @@ export const Item = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+
   a {
     color: ${({ theme }) => theme.mainText};
   }
@@ -36,6 +40,10 @@ export const ItemsFlex = styled.div`
   width: 100%;
   flex-wrap: wrap;
   padding: 60px 0 180px 0;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 `;
 
 export const ItemTitle = styled.div`

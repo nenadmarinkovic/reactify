@@ -13,6 +13,10 @@ export const MainForm = styled.main`
   margin: 0;
   font-size: 21px;
   line-height: 1.65;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.form`

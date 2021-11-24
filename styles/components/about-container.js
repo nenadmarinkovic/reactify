@@ -6,11 +6,19 @@ export const Container = styled.div`
   padding-bottom: 120px;
 `;
 
-export const Image = styled.div``;
+export const Image = styled.div`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
 
 export const ContainerFlex = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Text = styled.div`
@@ -21,6 +29,10 @@ export const Text = styled.div`
   margin: 10px 0;
   width: 60%;
   margin-top: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   p {
     margin-top: 0;

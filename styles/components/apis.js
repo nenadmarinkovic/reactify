@@ -6,6 +6,10 @@ export const ApisContainer = styled.div`
   padding: 20px 0;
   padding-top: 80px;
   background-color: #2a3ce0;
+
+  @media (max-width: 560px) {
+    padding-top: 30px;
+  }
 `;
 
 export const ApisFlex = styled.div`
@@ -13,6 +17,10 @@ export const ApisFlex = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-bottom: 80px;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
 `;
 
 export const ApisTitle = styled.div`
@@ -21,6 +29,14 @@ export const ApisTitle = styled.div`
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
   padding: 80px 120px 60px 120px;
+
+  @media (max-width: 768px) {
+    padding: 80px 20px 60px 20px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 2.525rem;
+  }
 `;
 
 export const ApisBox = styled.div`
@@ -29,9 +45,21 @@ export const ApisBox = styled.div`
   width: 50%;
   border-radius: 10px;
   color: white;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
-export const ApisSVG = styled.div``;
+export const ApisSVG = styled.div`
+  svg {
+    width: 100%;
+  }
+  @media (max-width: 1080px) {
+    margin-top: 40px;
+  }
+`;
 
 export const UpText = styled.div`
   font-size: 1.925rem;
@@ -51,6 +79,10 @@ export const DownText = styled.div`
 export const Spotify = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 1080px) {
+    justify-content: center;
+  }
 `;
 
 export const BoldText = styled.span`

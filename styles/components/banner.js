@@ -9,6 +9,14 @@ export const BannerContainer = styled.div`
   position: relative;
   height: 700px;
 
+  @media (max-width: 1230px) {
+    background: none;
+  }
+
+  @media (max-width: 1080px) {
+    height: unset;
+  }
+
   @media (min-width: 1580px) {
     height: 800px;
   }
@@ -24,12 +32,22 @@ export const BannerWrap = styled.div`
   @media (min-width: 1580px) {
     padding-top: 280px;
   }
+
+  @media (max-width: 680px) {
+    padding-top: 140px;
+  }
 `;
 
 export const BannerTextWrap = styled.div`
   display: flex;
   flex-direction: column;
   width: 55%;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 
   @media (min-width: 1580px) {
     width: 48%;
@@ -49,6 +67,10 @@ export const BannerTextTitle = styled.h1`
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
+
+  @media (max-width: 560px) {
+    font-size: 2.525rem;
+  }
 `;
 
 export const BannerTextWrapParagraph = styled.p`
@@ -72,9 +94,4 @@ export const BannerTextButton = styled.button`
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
-
-  /* :hover {
-    background-color: #08d55a;
-    border-color: #08d55a;
-  } */
 `;

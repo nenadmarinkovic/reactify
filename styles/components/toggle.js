@@ -8,7 +8,11 @@ export const ToggleButton = styled.button`
   transition: 0.3s;
   padding: 5px 10px;
   margin-bottom: 7px;
-  
+
+  @media (max-width: 680px) {
+    margin-right: 10px;
+  }
+
   :hover {
     background: ${({ theme }) => theme.switchHover};
   }

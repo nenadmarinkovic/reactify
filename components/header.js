@@ -9,6 +9,7 @@ import {
 } from "../styles/components/header";
 import Toggle from "./toggle";
 import Link from "next/link";
+import Menu from "./menu"
 
 function Header({ theme, toggleTheme }) {
   return (
@@ -74,6 +75,7 @@ function Header({ theme, toggleTheme }) {
               </HeaderLink>
             </HeaderLinks>
             <Toggle theme={theme} toggleTheme={toggleTheme} />
+            <Menu/>
           </HeaderFlex>
         </HeaderContainer>
       </div>

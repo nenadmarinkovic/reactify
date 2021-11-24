@@ -10,6 +10,10 @@ export const DesignFlex = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 120px;
+
+  @media (max-width: 560px) {
+    padding-bottom: 30px;
+  }
 `;
 
 export const DesignItem = styled.a`
@@ -29,6 +33,18 @@ export const DesignItem = styled.a`
   margin-bottom: 45px;
   box-shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)";
   border: 1px solid rgba(151, 151, 151, 0.34);
+
+  @media (max-width: 1080px) {
+    width: 45%;
+  }
+
+  @media (max-width: 768px) {
+    height: 280px;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 
   :hover {
     border: ${({ theme }) => theme.borderHover};

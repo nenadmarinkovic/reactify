@@ -17,6 +17,10 @@ export const DataFlex = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
 `;
 
 export const DataItem = styled.div`
@@ -25,4 +29,8 @@ export const DataItem = styled.div`
   transition: all 0.25s linear;
   width: 48%;
   border: ${({ theme }) => theme.borderHover};
+  @media (max-width: 560px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 `;

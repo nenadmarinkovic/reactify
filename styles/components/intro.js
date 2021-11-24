@@ -6,6 +6,14 @@ export const IntroText = styled.div`
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
   padding: 120px 120px 60px 120px;
+
+  @media (max-width: 768px) {
+    padding: 60px 20px 60px 20px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 2.525rem;
+  }
 `;
 
 export const IntroDesign = styled.div`
@@ -14,17 +22,33 @@ export const IntroDesign = styled.div`
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
   padding: 60px 120px 280px 120px;
+
+  @media (max-width: 768px) {
+    padding: 60px 20px 280px 20px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 2.525rem;
+  }
 `;
 
 export const Wrap = styled.div`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.introBackground};
   padding-bottom: 100px;
+
+  @media (max-width: 560px) {
+    padding-bottom: 30px;
+  }
 `;
 
 export const FlexItems = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const FlexItem = styled.div`
@@ -34,6 +58,10 @@ export const FlexItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const CountText = styled.div`

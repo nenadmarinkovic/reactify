@@ -9,12 +9,25 @@ export const BannerWrap = styled.div`
   padding: 180px 0 80px 0;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 680px) {
+    padding-top: 140px;
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
 `;
 
 export const BannerTextWrap = styled.div`
   display: flex;
   flex-direction: column;
   width: 48%;
+
+  @media (max-width: 880px) {
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const BannerTextWrapTop = styled.div`
@@ -30,6 +43,10 @@ export const BannerTextTitle = styled.h1`
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
+
+  @media (max-width: 560px) {
+    font-size: 2.525rem;
+  }
 `;
 
 export const BannerTextWrapParagraph = styled.p`

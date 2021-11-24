@@ -11,6 +11,10 @@ export const PostsFlex = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 60px 0 180px 0;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 `;
 
 export const PostItem = styled.div`
@@ -18,6 +22,10 @@ export const PostItem = styled.div`
   flex-direction: column;
   width: 42%;
   margin-bottom: 65px;
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
 
   p {
     width: 320px;

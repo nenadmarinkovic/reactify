@@ -23,6 +23,18 @@ export const Item = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  @media (max-width: 1080px) {
+    width: 400px;
+  }
+
+  @media (max-width: 920px) {
+    width: 300px;
+  }
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+
   a {
     color: ${({ theme }) => theme.mainText};
   }
@@ -38,6 +50,10 @@ export const ItemsFlex = styled.div`
   width: 100%;
   flex-wrap: wrap;
   padding: 60px 0 180px 0;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 `;
 
 export const ItemTitle = styled.div`

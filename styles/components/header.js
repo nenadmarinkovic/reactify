@@ -28,6 +28,10 @@ export const HeaderLinks = styled.div`
   display: flex;
   padding-bottom: 7px;
   margin-right: 10px;
+
+  @media (max-width: 680px) {
+    display: none;
+  }
 `;
 
 export const HeaderLink = styled.div`

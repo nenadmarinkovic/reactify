@@ -172,6 +172,12 @@ span.token.class-name {
   width: 560px;
   text-align: end;
   margin-right: 10px;
+
+  @media (max-width: 880px) {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
 }
 
 .ct-double-octave:after,
