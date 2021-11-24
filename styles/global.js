@@ -110,6 +110,12 @@ a {
   }
 }
 
+.scroll-to-intro {
+  @media (max-width: 768px) {
+    height: 20px;
+  }
+}
+
 .page-transition-enter {
   opacity: 0;
 }
