@@ -8,7 +8,7 @@ export const IntroText = styled.div`
   padding: 120px 120px 60px 120px;
 
   @media (max-width: 768px) {
-    padding: 60px 20px 60px 20px;
+    padding: 60px 0 60px 0;
   }
 
   @media (max-width: 560px) {

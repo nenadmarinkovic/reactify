@@ -9,7 +9,7 @@ export const BannerWrap = styled.div`
   padding: 180px 0 80px 0;
 
   @media (max-width: 680px) {
-    padding-top: 140px;
+    padding: 140px 0 40px 0;
   }
 `;
 

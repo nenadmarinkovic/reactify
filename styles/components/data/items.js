@@ -25,6 +25,7 @@ export const Item = styled.a`
 
   @media (max-width: 720px) {
     width: 100%;
+    margin-bottom: 40px;
   }
 
   a {

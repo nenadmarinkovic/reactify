@@ -11,7 +11,7 @@ export const BannerWrap = styled.div`
   justify-content: space-between;
 
   @media (max-width: 680px) {
-    padding-top: 140px;
+    padding: 140px 0 40px 0;
   }
 
   @media (max-width: 880px) {

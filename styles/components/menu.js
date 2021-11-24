@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   background: #2a3ce0;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-  height: 50vh;
+  height: 65vh;
   text-align: left;
   padding: 80px;
   position: fixed;
@@ -19,7 +19,7 @@ export const StyledMenu = styled.nav`
 
 export const MenuItem = styled.div`
   color: white;
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
   font-size: 18px;
 
