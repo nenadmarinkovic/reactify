@@ -68,8 +68,12 @@ export const CountText = styled.div`
   font-size: 23px;
   text-align: center;
   color: ${({ theme }) => theme.mainText};
-
+  width: 80%;
   font-family: "Studio-Feixen-Sans Black";
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const CountWrap = styled.div`

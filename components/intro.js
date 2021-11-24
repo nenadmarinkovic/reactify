@@ -18,21 +18,21 @@ function Intro() {
           <FlexItems>
             <FlexItem>
               <CountWrap>
-                <Count end={32} duration={3} /> <span>+</span>
+                <Count end={48} duration={3} /> <span>+</span>
               </CountWrap>
-              <CountText>Open-source tools for web developers</CountText>
+              <CountText>Web design resources web developers</CountText>
             </FlexItem>
             <FlexItem>
               <CountWrap>
-                <Count end={7} duration={3} /> <span>+</span>
+                <Count end={3} duration={3} /> <span>+</span>
               </CountWrap>
-              <CountText> Third party API examples</CountText>
+              <CountText>Content management system tested</CountText>
             </FlexItem>
             <FlexItem>
               <CountWrap>
-                <Count end={15} duration={3} /> <span>+</span>
+                <Count end={530} duration={3} /> <span>+</span>
               </CountWrap>
-              <CountText>UI design patterns for web designers</CountText>
+              <CountText>APIs available for instant use</CountText>
             </FlexItem>
           </FlexItems>
         </div>
