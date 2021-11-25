@@ -21,13 +21,13 @@ function Intro() {
               <CountWrap>
                 <Count end={48} duration={3} /> <span>+</span>
               </CountWrap>
-              <CountText>Web design resources web developers</CountText>
+              <CountText>Design resources for web developers</CountText>
             </FlexItem>
             <FlexItem>
               <CountWrap>
                 <Count end={3} duration={3} /> <span>+</span>
               </CountWrap>
-              <CountText>Content management system tested</CountText>
+              <CountText>Content management systems tested</CountText>
             </FlexItem>
             <FlexItem>
               <CountWrap>
