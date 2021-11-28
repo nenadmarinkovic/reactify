@@ -25,8 +25,8 @@ export const useTheme = () => {
     (!localTheme && hour >= 19) || hour <= 6
       ? setMode("dark")
       : localTheme
-      ? setTheme(localTheme)
-      : setMode("light");
+        ? setTheme(localTheme)
+        : setMode("light");
 
     setComponentMounted(true);
   }, []);
