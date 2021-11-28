@@ -7,44 +7,38 @@ function Tech({ theme }) {
       <div className="container">
         <TechContainer>
           <Logo
-            src={`images/icons/${
-              theme == "dark" ? "react-dark-theme.svg" : "react-light-theme.svg"
-            }`}
+            src={`images/icons/${theme == "dark" ? "react-dark-theme.svg" : "react-light-theme.svg"
+              }`}
           ></Logo>
           <Logo
             className="tech-icon-alt"
-            src={`images/icons/${
-              theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
-            }`}
+            src={`images/icons/${theme == "dark" ? "next-dark-theme.svg" : "next-light-theme.svg"
+              }`}
           ></Logo>
           <Logo
             className="tech-icon"
-            src={`images/icons/${
-              theme == "dark"
+            src={`images/icons/${theme == "dark"
                 ? "contentful-dark-theme.svg"
                 : "contentful-light-theme.svg"
-            }`}
+              }`}
           ></Logo>
           <Logo
             className="tech-icon-alt"
-            src={`images/icons/${
-              theme == "dark"
+            src={`images/icons/${theme == "dark"
                 ? "sanity-dark-theme.svg"
                 : "sanity-light-theme.svg"
-            }`}
+              }`}
           ></Logo>
           <Logo
             className="tech-icon-alt"
-            src={`images/icons/${
-              theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
-            }`}
+            src={`images/icons/${theme == "dark" ? "dato-dark-theme.svg" : "dato-light-theme.svg"
+              }`}
           ></Logo>
           <Logo
-            src={`images/icons/${
-              theme == "dark"
+            src={`images/icons/${theme == "dark"
                 ? "graphcms-dark-theme.svg"
                 : "graphcms-light-theme.svg"
-            }`}
+              }`}
           ></Logo>
         </TechContainer>
       </div>
