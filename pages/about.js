@@ -25,7 +25,7 @@ export default function Home({}) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory | About</title>
+          <title>Dot Directory | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
