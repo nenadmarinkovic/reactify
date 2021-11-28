@@ -13,7 +13,7 @@ function Items({ items }) {
       setList(items);
       return;
     }
-
+    
     const filteredData = items.filter((item) => item.Category === button);
     setList(filteredData);
   };
