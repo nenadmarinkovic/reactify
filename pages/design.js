@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 import { request } from "../lib/datocms";
 
 const DESIGN_ITEMS_QUERY = `{
-  allItems {
+  allItems(first: 100) {
     id
     name
     description
@@ -29,6 +29,8 @@ export default function Home({ items }) {
   if (!componentMounted) {
     return <div />;
   }
+
+  console.log(items);
 
   return (
     <>
