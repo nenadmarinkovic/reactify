@@ -35,7 +35,7 @@ function AboutContainer() {
               </a>{" "}
               and all code is available in{" "}
               <a
-                href="https://github.com/nenadmarinkovic/dot"
+                href="https://github.com/nenadmarinkovic/reactify"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -44,7 +44,7 @@ function AboutContainer() {
               .
             </p>
           </Text>
-          <Image>
+          <Image alt="Logo">
             <Fade bottom>
               <div>
                 <svg
