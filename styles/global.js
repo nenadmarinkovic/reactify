@@ -1033,4 +1033,13 @@ span.token.class-name {
   justify-content: space-evenly;
 }
 
+.banner-button {
+  text-decoration: none;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
 `;

@@ -88,10 +88,13 @@ export const BannerTextButton = styled.button`
   display: inline-block;
   width: 255px;
   color: ${({ theme }) => theme.reversedText};
-  padding: 20px;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
+
+  :hover {
+    filter: brightness(0.85);
+  }
 `;

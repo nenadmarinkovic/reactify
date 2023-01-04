@@ -29,7 +29,7 @@ function Banner({ theme, toggleTheme }) {
               mission to make the web a better and more beautiful place.
             </BannerTextWrapParagraph>
             <BannerTextButton>
-              <Link activeClass="active" to="intro" spy={true} smooth={true}>
+              <Link activeClass="active" to="intro" spy={true} smooth={true} className="banner-button">
                 Find out more
               </Link>
             </BannerTextButton>
