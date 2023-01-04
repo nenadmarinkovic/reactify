@@ -54,7 +54,7 @@ export default function Home({ items, error, data }) {
         <Intro />
         <Design items={items.allItems} />
         <Data globalTheme={theme} />
-        {error && <p>{error}</p>}
+          {error && <p>{error}</p>}
         <Apis data={data} />
         <Footer />
       </ThemeProvider>
@@ -64,24 +64,6 @@ export default function Home({ items, error, data }) {
 
 export async function getStaticProps() {
   let data = [];
-  let error = "";
-
-  const server = "https://dot.directory/api/playing";
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    data = await res.json();
-  } catch (e) {
-    error = e.toString();
-  }
 
   const items = await request({
     query: DESIGN_ITEMS_QUERY,
