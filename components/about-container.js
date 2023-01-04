@@ -14,18 +14,18 @@ function AboutContainer() {
         <ContainerFlex>
           <Text>
             <p>
-              Dot Directory is an open-source collection of useful design
+            Reactify is an open-source collection of useful design
               resources handpicked around the web, a place for testing different
               content management systems around Next.js and React ecosystem, and
               a playground for trying out different APIs.
             </p>
             <p>
-              Dot Directory helps developers and designers find the best tools
+              Reactify helps developers and designers find the best tools
               and technologies for their job. As such, the purpose of the
               project is to make the web a better and more beautiful place.
             </p>
             <p>
-              The creator of Dot Directory is{" "}
+              The creator of Reactify is{" "}
               <a
                 href="https://nenadmarinkovic.com"
                 target="_blank"
@@ -56,7 +56,7 @@ function AboutContainer() {
                 >
                   <path
                     d="M159.447 159.683C203.542 159.683 239.288 123.937 239.288 79.8416C239.288 35.7462 203.542 0 159.447 0C115.352 0 79.605 35.7462 79.605 79.8416C79.605 123.937 115.352 159.683 159.447 159.683Z"
-                    fill="#193AE5"
+                    fill="#0050ff"
                   />
                   <path
                     d="M79.8416 159.683C123.937 159.683 159.683 123.937 159.683 79.8416C159.683 35.7462 123.937 0 79.8416 0C35.7463 0 0 35.7462 0 79.8416C0 123.937 35.7463 159.683 79.8416 159.683Z"

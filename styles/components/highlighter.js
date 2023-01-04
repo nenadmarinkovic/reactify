@@ -12,8 +12,6 @@ transition: all 0.25s linear;
 background: ${({ theme }) => theme.itemBackground} !important;
 text-align: left;
 padding: 1rem 1.5rem;
-overflow: scroll;
-
 
 & .token-line {
   line-height: 1.3em;

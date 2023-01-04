@@ -18,14 +18,14 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
+            <BannerTextWrapTop>— REACTIFY</BannerTextWrapTop>
 
             <BannerTextTitle>
               Web directory for data, design, and APIs
             </BannerTextTitle>
             <BannerTextWrapParagraph>
-              Dot Directory is a collection of useful web patterns, resources,
-              tools and technologies that help developers and designers in their
+              Reactify is a collection of useful web patterns, resources, tools
+              and technologies that help developers and designers in their
               mission to make the web a better and more beautiful place.
             </BannerTextWrapParagraph>
             <BannerTextButton>

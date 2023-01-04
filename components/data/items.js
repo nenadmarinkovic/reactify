@@ -13,8 +13,8 @@ function Items({ theme }) {
     <ItemsContainer>
       <div className="container-inside">
         <ItemsFlex>
-          <Link href="data/contentful">
-            <Item>
+          <Item>
+            <Link href="data/contentful" passHref className="link-item">
               <Logo
                 className="logo-data-big"
                 src={`images/icons/${
@@ -27,10 +27,10 @@ function Items({ theme }) {
                 API-first, cloud-native SaaS for complex and diverse business
                 needs.
               </Text>
-            </Item>
-          </Link>
-          <Link href="data/sanity">
-            <Item>
+            </Link>
+          </Item>
+          <Item>
+            <Link href="data/sanity" passHref className="link-item">
               <Logo
                 src={`images/icons/${
                   theme == "dark"
@@ -41,10 +41,10 @@ function Items({ theme }) {
               <Text>
                 Highly versatile and adaptable platform for structured content.
               </Text>
-            </Item>
-          </Link>
-          <Link href="data/datocms">
-            <Item>
+            </Link>
+          </Item>
+          <Item>
+            <Link href="data/datocms" passHref className="link-item">
               <Logo
                 src={`images/icons/${
                   theme == "dark"
@@ -53,11 +53,10 @@ function Items({ theme }) {
                 }`}
               ></Logo>
               <Text>The API-based CMS with a customizable interface.</Text>
-            </Item>
-          </Link>
-
-          <Link href="data/graphcms">
-            <Item>
+            </Link>
+          </Item>
+          <Item>
+            <Link href="data/graphcms" passHref className="link-item">
               <Logo
                 className="logo-data-big"
                 src={`images/icons/${
@@ -70,8 +69,8 @@ function Items({ theme }) {
                 Instant GraphQL Content APIs to create, enrich, unify, and
                 deliver your content.
               </Text>
-            </Item>
-          </Link>
+            </Link>
+          </Item>
         </ItemsFlex>
       </div>
     </ItemsContainer>

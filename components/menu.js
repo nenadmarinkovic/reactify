@@ -7,29 +7,19 @@ const MenuComponent = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <MenuItem>
-        <Link href="/design">
-          <a aria-label="Design">Design</a>
-        </Link>
+        <Link href="/design">Design</Link>
       </MenuItem>
       <MenuItem>
-        <Link href="/data">
-          <a aria-label="Data">Data</a>
-        </Link>
+        <Link href="/data">Data</Link>
       </MenuItem>
       <MenuItem>
-        <Link href="/apis">
-          <a aria-label="APIs">APIs</a>
-        </Link>
+        <Link href="/apis">APIs</Link>
       </MenuItem>
       <MenuItem>
-        <Link href="/about">
-          <a aria-label="About">About</a>
-        </Link>
+        <Link href="/about">About</Link>
       </MenuItem>
       <MenuItem>
-        <Link href="/contact">
-          <a aria-label="Contact">Contact</a>
-        </Link>
+        <Link href="/contact">Contact</Link>
       </MenuItem>
     </StyledMenu>
   );

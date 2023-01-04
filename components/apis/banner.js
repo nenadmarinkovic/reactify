@@ -16,7 +16,7 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
+            <BannerTextWrapTop>— REACTIFY</BannerTextWrapTop>
             <BannerTextTitle>APIs</BannerTextTitle>
             <BannerTextWrapParagraph>
               A collection of free APIs for use in software and web development

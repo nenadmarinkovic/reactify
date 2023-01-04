@@ -6,7 +6,7 @@ function Footer() {
     <FooterContainer>
       <div className="container">
         <Copyright>
-          © {new Date().getFullYear()} Dot Directory
+          © {new Date().getFullYear()} Reactify
         </Copyright>
         <Copyright>
           Web development and design:

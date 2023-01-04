@@ -41,7 +41,7 @@ export default function Home({ items, error, data }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory</title>
+          <title>Reactify</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."

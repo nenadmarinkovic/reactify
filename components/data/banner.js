@@ -21,7 +21,7 @@ function Banner({ banner, theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
+            <BannerTextWrapTop>— REACTIFY</BannerTextWrapTop>
             <BannerTextTitle>{banner.title}</BannerTextTitle>
             <BannerTextWrapParagraph>{banner.text}</BannerTextWrapParagraph>
             {banner.link ? (

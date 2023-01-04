@@ -5,7 +5,7 @@ export const ItemsContainer = styled.div`
   transition: all 0.25s linear;
 `;
 
-export const Item = styled.a`
+export const Item = styled.span`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};

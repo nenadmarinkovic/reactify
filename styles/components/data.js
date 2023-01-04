@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DataContainer = styled.div`
   padding-top: 300px;
-  background-color: #2a3ce0;
+  background-color: #0050ff;
 `;
 
 export const DataBox = styled.div`

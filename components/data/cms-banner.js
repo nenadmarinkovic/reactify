@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import {
   BannerContainer,
   BannerWrap,
@@ -23,7 +22,7 @@ function Banner({ stats, banner, theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextWrapTop>— DOT DIRECTORY</BannerTextWrapTop>
+            <BannerTextWrapTop>— REACTIFY</BannerTextWrapTop>
             <BannerTextTitle>{banner.title}</BannerTextTitle>
             <BannerTextWrapParagraph>{banner.text}</BannerTextWrapParagraph>
             {banner.link ? (

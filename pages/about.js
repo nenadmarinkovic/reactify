@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 
 const banner = {
   title: "About",
-  text: "Introduction to the Dot Directory project.",
+  text: "Introduction to the Reactify project.",
 };
 
 export default function Home({}) {
@@ -25,7 +25,7 @@ export default function Home({}) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot Directory | {banner.title}</title>
+          <title>Reactify | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."
