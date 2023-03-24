@@ -63,6 +63,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   background: ${({ theme }) => theme.background};
   width: 100%;
+  scrollbar-gutter: stable;
 }
 
 body {
