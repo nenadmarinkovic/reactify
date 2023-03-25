@@ -24,6 +24,7 @@ export const Logo = styled.div`
 export const LogoName = styled.div`
   font-family: "Studio-Feixen-Sans Bold";
   margin-left: 5px;
+  color: ${({ theme }) => theme.mainText};
 `;
 
 export const HeaderFlex = styled.div`

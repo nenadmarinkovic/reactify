@@ -18,9 +18,6 @@ const MenuComponent = ({ open, setOpen }) => {
       <MenuItem>
         <Link href="/about">About</Link>
       </MenuItem>
-      <MenuItem>
-        <Link href="/contact">Contact</Link>
-      </MenuItem>
     </StyledMenu>
   );
 };

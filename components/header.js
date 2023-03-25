@@ -17,8 +17,8 @@ function Header({ theme, toggleTheme }) {
     <HeaderWrap>
       <div className="container">
         <HeaderContainer>
-          <Logo>
-            <Link href="/" passHref>
+          <Link href="/" passHref>
+            <Logo>
               <svg
                 width="44"
                 height="23"
@@ -43,9 +43,9 @@ function Header({ theme, toggleTheme }) {
                   />
                 </g>
               </svg>
-            </Link>
-            <LogoName>Reactify</LogoName>
-          </Logo>
+              <LogoName>Reactify</LogoName>
+            </Logo>
+          </Link>
           <HeaderFlex>
             <HeaderLinks>
               <HeaderLink>
@@ -59,9 +59,6 @@ function Header({ theme, toggleTheme }) {
               </HeaderLink>
               <HeaderLink>
                 <Link href="/about">About</Link>
-              </HeaderLink>
-              <HeaderLink>
-                <Link href="/contact">Contact</Link>
               </HeaderLink>
             </HeaderLinks>
             <Toggle theme={theme} toggleTheme={toggleTheme} />
