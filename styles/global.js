@@ -83,6 +83,7 @@ ul, li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
