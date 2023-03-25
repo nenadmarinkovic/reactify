@@ -1,8 +1,10 @@
+/**
+ * @type {import('next').NextConfig}
+ */
+
 module.exports = {
   reactStrictMode: false,
-  compiler: {
-    styledComponents: true,
-  },
+  swcMinify: true,
 
   images: {
     domains: [
@@ -12,4 +14,13 @@ module.exports = {
       "images.ctfassets.net",
     ],
   },
-};
+
+  experimental: {
+    legacyBrowsers: false,
+  },
+
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+}
