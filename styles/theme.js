@@ -1,6 +1,5 @@
 export const lightTheme = {
-  background: "#f9f9f9",
-  bannerBackground: "url(images/banner-light.svg) #f9f9f9",
+  background: "#fff",
   switchBackground: "transparent",
   switchShadow:
     "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 2px",
@@ -8,8 +7,8 @@ export const lightTheme = {
   mainText: "#000",
   helperText: "#0050ff",
   reversedText: "#FFF",
-  introBackground: "#f9f9f9",
-  designBackground: "#f9f9f9",
+  introBackground: "#fff",
+  designBackground: "#fff",
   itemBackground: "#fff",
   borderHover: "1px solid rgba(0, 0, 0, 0.2)",
   activeButtonBorder: "2px solid #0050ff",
@@ -23,7 +22,6 @@ export const darkTheme = {
   switchShadow:
     "rgba(0, 0, 0, 0.5) 0px 1px 2px, rgb(251, 251, 251) 0px 0px 0px 2px",
   switchHover: "rgba(255, 255, 255, 0.15)",
-  bannerBackground: "url(images/banner-dark.svg) #000",
   switchBackground: "transparent",
   mainText: "#FFF",
   helperText: "#08d55a",

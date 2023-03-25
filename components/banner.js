@@ -3,7 +3,6 @@ import {
   BannerContainer,
   BannerWrap,
   BannerTextWrap,
-  BannerTextWrapTop,
   BannerTextTitle,
   BannerTextWrapParagraph,
   BannerTextButton,
@@ -18,10 +17,8 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextWrapTop>— REACTIFY</BannerTextWrapTop>
-
             <BannerTextTitle>
-              Web directory for data, design, and APIs
+              Data, design, and APIs around React
             </BannerTextTitle>
             <BannerTextWrapParagraph>
               Reactify is a collection of useful web patterns, resources, tools
@@ -29,11 +26,23 @@ function Banner({ theme, toggleTheme }) {
               mission to make the web a better and more beautiful place.
             </BannerTextWrapParagraph>
             <BannerTextButton>
-              <Link activeClass="active" to="intro" spy={true} smooth={true} className="banner-button">
+              <Link
+                activeClass="active"
+                to="intro"
+                spy={true}
+                smooth={true}
+                className="banner-button"
+              >
                 Find out more
               </Link>
             </BannerTextButton>
           </BannerTextWrap>
+          <div className="box">
+            <span className="point"></span>
+            <span className="ring-1"></span>
+            <span className="ring-2"></span>
+            <span className="ring-3"></span>
+          </div>
         </BannerWrap>
       </div>
     </BannerContainer>

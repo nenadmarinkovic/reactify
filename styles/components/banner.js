@@ -2,35 +2,19 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.bannerBackground};
-  transition: all 0.25s linear;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-  height: 700px;
-
-  @media (max-width: 1230px) {
-    background: none;
-  }
-
-  @media (max-width: 1080px) {
-    height: unset;
-  }
-
-  @media (min-width: 1580px) {
-    height: 800px;
-  }
-
-  @media (min-width: 1980px) {
-    height: 1025px;
-  }
+  border-bottom: 5px solid #f7f7f7;
 `;
 
 export const BannerWrap = styled.div`
   padding-top: 180px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 300px;
 
   @media (min-width: 1580px) {
-    padding-top: 280px;
+    padding-top: 180px;
   }
 
   @media (max-width: 680px) {
@@ -41,29 +25,16 @@ export const BannerWrap = styled.div`
 export const BannerTextWrap = styled.div`
   display: flex;
   flex-direction: column;
-  width: 55%;
 
   @media (max-width: 1080px) {
     width: 100%;
     text-align: center;
     align-items: center;
   }
-
-  @media (min-width: 1580px) {
-    width: 48%;
-  }
-`;
-
-export const BannerTextWrapTop = styled.div`
-  color: ${({ theme }) => theme.helperText};
-  text-transform: capitalize;
-  font-family: "Studio-Feixen-Sans Bold";
-  letter-spacing: 2px;
-  line-height: 1.2;
 `;
 
 export const BannerTextTitle = styled.h1`
-  font-size: 3.525rem;
+  font-size: 4.225rem;
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};
@@ -82,7 +53,7 @@ export const BannerTextWrapParagraph = styled.p`
 `;
 
 export const BannerTextButton = styled.button`
-  margin: 20px 0;
+  margin: 1.5rem auto;
   background-color: ${({ theme }) => theme.helperText};
   border: ${({ theme }) => theme.helperText};
   display: inline-block;

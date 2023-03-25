@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroText = styled.div`
   color: ${({ theme }) => theme.mainText};
-  font-size: 3.525rem;
+  font-size: 2.525rem;
   font-family: "Studio-Feixen-Sans Black";
   text-align: center;
   padding: 120px 120px 60px 120px;
@@ -69,7 +69,6 @@ export const CountText = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.mainText};
   width: 80%;
-  font-family: "Studio-Feixen-Sans Black";
 
   @media (max-width: 768px) {
     width: 100%;

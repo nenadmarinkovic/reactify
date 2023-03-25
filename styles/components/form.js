@@ -9,7 +9,7 @@ export const FlexContainer = styled.main`
 `;
 
 export const MainForm = styled.main`
-  width: 50%;
+  width: 100%;
   margin: 0;
   font-size: 21px;
   line-height: 1.65;
@@ -26,7 +26,6 @@ export const FormContainer = styled.form`
 export const FormLabel = styled.label`
   color: ${({ theme }) => theme.helperText};
   font-size: 14px;
-  font-family: "Studio-Feixen-Sans Bold";
   letter-spacing: 0.3px;
   font-weight: 500;
   text-align: left;
