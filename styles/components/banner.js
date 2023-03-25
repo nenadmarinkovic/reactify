@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.bannerBackground};
-  border-bottom: 5px solid #f7f7f7;
+  border-bottom: 5px solid ${({ theme }) => theme.additionalBorder};
 `;
 
 export const BannerWrap = styled.div`

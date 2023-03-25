@@ -1062,7 +1062,7 @@ span.token.class-name {
   width: 12%;
   height: 12%;
   border-radius: 50%;
-  background-color: #F7F7F7;
+  background-color: ${({ theme }) => theme.reactAnimationColor};
   transform: translate(-50%, -50%) scale(0);
   animation: point-animate 0.75s ease .5s forwards;
 }
@@ -1122,7 +1122,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%);
   }
 
@@ -1130,7 +1130,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%) rotateZ(30deg) rotateY(70deg);
   }
 }
@@ -1149,7 +1149,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%);
   }
 
@@ -1157,7 +1157,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%) rotateZ(90deg) rotateY(70deg);
   }
 }
@@ -1176,7 +1176,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%);
   }
 
@@ -1184,7 +1184,7 @@ span.token.class-name {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-color: #F7F7F7;
+    border-color: ${({ theme }) => theme.reactAnimationColor};
     transform: translate(-50%, -50%) rotateZ(150deg) rotateY(70deg);
   }
 }

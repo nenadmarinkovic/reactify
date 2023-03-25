@@ -15,6 +15,8 @@ export const lightTheme = {
   activeButtonColor: "#0050ff",
   spanToken: "#07933f",
   buttonText: "#fff",
+  reactAnimationColor: "#F7F7F7",
+  additionalBorder: '#F7F7F7'
 };
 
 export const darkTheme = {
@@ -35,4 +37,6 @@ export const darkTheme = {
   activeButtonColor: "#08d55a",
   spanToken: "#08d55a",
   buttonText: "#000",
+  reactAnimationColor: "#2c2c2c",
+  additionalBorder: '#2c2c2c'
 };
