@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const ItemsContainer = styled.div`
   background: ${({ theme }) => theme.background};
-  transition: all 0.25s linear;
 `;
 
 export const Item = styled.div`
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
   width: 295px;

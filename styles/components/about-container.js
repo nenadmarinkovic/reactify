@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: ${({ theme }) => theme.introBackground};
-  transition: all 0.25s linear;
   padding-bottom: 120px;
 `;
 

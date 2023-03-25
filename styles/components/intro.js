@@ -33,7 +33,6 @@ export const IntroDesign = styled.div`
 `;
 
 export const Wrap = styled.div`
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.introBackground};
   padding-bottom: 100px;
   position: relative;

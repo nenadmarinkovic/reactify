@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TechWrap = styled.div`
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.background};
   padding: 60px 0 20px;
   position: relative;

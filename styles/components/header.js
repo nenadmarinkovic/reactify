@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HeaderWrap = styled.div`
   position: fixed;
   width: 100%;
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.background};
   height: 80px;
   z-index: 3;

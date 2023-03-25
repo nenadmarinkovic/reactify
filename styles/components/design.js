@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const DesignWrap = styled.div`
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.designBackground};
 `;
 
@@ -17,7 +16,6 @@ export const DesignFlex = styled.div`
 `;
 
 export const DesignItem = styled.a`
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground};
   color: ${({ theme }) => theme.mainText};
   padding: 40px 30px;

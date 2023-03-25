@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ApisContainer = styled.div`
-  transition: all 0.25s linear;
   text-align: center;
   padding: 20px 0;
   padding-top: 80px;
@@ -40,7 +39,6 @@ export const ApisTitle = styled.div`
 `;
 
 export const ApisBox = styled.div`
-  transition: all 0.25s linear;
   text-align: start;
   width: 50%;
   border-radius: 10px;
@@ -96,7 +94,6 @@ export const SpotifyText = styled.div`
   a {
     color: white;
     margin-left: 5px;
-    transition: all 0.25s linear;
 
     :hover {
       color: #08d55a;

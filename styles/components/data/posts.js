@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const PostsContainer = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.mainText};
-  transition: all 0.25s linear;
 `;
 
 export const PostsFlex = styled.div`
@@ -46,7 +45,6 @@ export const PostImage = styled.img`
 `;
 
 export const Centered = styled.div`
-  transition: all 0.25s linear;
   font-family: "Studio-Feixen-Sans Book";
   font-size: 1.3rem;
   padding: 15px 0 25px 0;

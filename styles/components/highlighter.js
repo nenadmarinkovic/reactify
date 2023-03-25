@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
 
 export const Pre = styled.pre`
   border-radius: 10px;
-  transition: all 0.25s linear;
   background: ${({ theme }) => theme.itemBackground} !important;
   text-align: left;
   padding: 1rem 1.5rem;

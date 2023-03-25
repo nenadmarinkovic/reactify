@@ -9,7 +9,6 @@ export const DataBox = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   border-radius: 10px;
   margin-top: -500px;
-  transition: all 0.25s linear;
   border: ${({ theme }) => theme.borderHover};
 `;
 
@@ -26,7 +25,6 @@ export const DataFlex = styled.div`
 export const DataItem = styled.div`
   background: ${({ theme }) => theme.itemBackground};
   border-radius: 10px;
-  transition: all 0.25s linear;
   width: 48%;
   border: ${({ theme }) => theme.borderHover};
   @media (max-width: 560px) {
