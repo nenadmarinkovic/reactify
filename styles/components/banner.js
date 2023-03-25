@@ -11,7 +11,7 @@ export const BannerWrap = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 300px;
+  margin: 0 180px;
 
   @media (min-width: 1580px) {
     padding-top: 180px;
@@ -34,7 +34,7 @@ export const BannerTextWrap = styled.div`
 `;
 
 export const BannerTextTitle = styled.h1`
-  font-size: 4.225rem;
+  font-size: 4.125rem;
   font-family: "Studio-Feixen-Sans Black";
   margin: 10px 0;
   color: ${({ theme }) => theme.mainText};

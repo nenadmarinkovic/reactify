@@ -18,7 +18,7 @@ function Banner({ theme, toggleTheme }) {
         <BannerWrap>
           <BannerTextWrap>
             <BannerTextTitle>
-              Data, design, and APIs around React
+              Data, design, and APIs for React
             </BannerTextTitle>
             <BannerTextWrapParagraph>
               Reactify is a collection of useful web patterns, resources, tools

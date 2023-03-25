@@ -67,6 +67,8 @@ export const FlexItem = styled.div`
 export const CountText = styled.div`
   font-size: 23px;
   text-align: center;
+  line-height: 1.5;
+  font-family: 'Studio-Feixen-Sans Regular';
   color: ${({ theme }) => theme.mainText};
   width: 80%;
 

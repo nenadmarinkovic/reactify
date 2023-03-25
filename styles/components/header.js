@@ -17,7 +17,14 @@ export const HeaderContainer = styled.div`
   width: 100%;
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const LogoName = styled.div`
+  font-family: "Studio-Feixen-Sans Bold";
+  margin-left: 5px;
+`;
 
 export const HeaderFlex = styled.div`
   display: flex;

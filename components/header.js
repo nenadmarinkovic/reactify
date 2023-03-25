@@ -3,6 +3,7 @@ import {
   HeaderWrap,
   HeaderContainer,
   Logo,
+  LogoName,
   HeaderFlex,
   HeaderLinks,
   HeaderLink,
@@ -19,8 +20,8 @@ function Header({ theme, toggleTheme }) {
           <Logo>
             <Link href="/" passHref>
               <svg
-                width="64"
-                height="43"
+                width="44"
+                height="23"
                 viewBox="0 0 64 43"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +33,7 @@ function Header({ theme, toggleTheme }) {
                   />
                   <path
                     d="M21.2911 42.5821C33.0498 42.5821 42.5821 33.0498 42.5821 21.2911C42.5821 9.53233 33.0498 0 21.2911 0C9.53234 0 0 9.53233 0 21.2911C0 33.0498 9.53234 42.5821 21.2911 42.5821Z"
-                    fill="#FFF"
+                    fill="#F7F7F7"
                   />
                   <path
                     fillRule="evenodd"
@@ -43,6 +44,7 @@ function Header({ theme, toggleTheme }) {
                 </g>
               </svg>
             </Link>
+            <LogoName>Reactify</LogoName>
           </Logo>
           <HeaderFlex>
             <HeaderLinks>
