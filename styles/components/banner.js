@@ -11,7 +11,7 @@ export const BannerWrap = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 180px;
+  margin: 0 320px;
 
   @media (min-width: 1580px) {
     padding-top: 180px;

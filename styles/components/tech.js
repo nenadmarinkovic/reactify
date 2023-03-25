@@ -10,6 +10,7 @@ export const TechContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 150px;
 
   @media (max-width: 1080px) {
     flex-wrap: wrap;

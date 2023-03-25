@@ -23,6 +23,7 @@ export const IntroDesign = styled.div`
   text-align: center;
   padding: 60px 120px 280px 120px;
 
+
   @media (max-width: 768px) {
     padding: 60px 20px 280px 20px;
   }
