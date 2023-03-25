@@ -7,6 +7,7 @@ export const HeaderWrap = styled.div`
   background: ${({ theme }) => theme.background};
   height: 80px;
   z-index: 3;
+  border-bottom: 1px solid #f7f7f7;
 `;
 
 export const HeaderContainer = styled.div`
