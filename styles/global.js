@@ -89,7 +89,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
-
+  position: relative;
 
 @media (min-width: 1580px) {
     max-width: 1440px;
