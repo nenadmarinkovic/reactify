@@ -4,6 +4,8 @@ export const TechWrap = styled.div`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.background};
   padding: 60px 0 20px;
+  position: relative;
+  z-index: 1;
 `;
 
 export const TechContainer = styled.div`

@@ -1051,7 +1051,7 @@ span.token.class-name {
   height: 800px;
   animation: box-animate 30s linear infinite;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   right: 0;
   bottom: -62%;
 }

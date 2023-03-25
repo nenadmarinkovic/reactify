@@ -23,7 +23,6 @@ export const IntroDesign = styled.div`
   text-align: center;
   padding: 60px 120px 280px 120px;
 
-
   @media (max-width: 768px) {
     padding: 60px 20px 280px 20px;
   }
@@ -37,6 +36,8 @@ export const Wrap = styled.div`
   transition: all 0.25s linear;
   background: ${({ theme }) => theme.introBackground};
   padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 560px) {
     padding-bottom: 30px;
@@ -69,7 +70,7 @@ export const CountText = styled.div`
   font-size: 23px;
   text-align: center;
   line-height: 1.5;
-  font-family: 'Studio-Feixen-Sans Regular';
+  font-family: "Studio-Feixen-Sans Regular";
   color: ${({ theme }) => theme.mainText};
   width: 80%;
 
