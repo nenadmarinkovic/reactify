@@ -62,6 +62,7 @@ html {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   background: ${({ theme }) => theme.background};
+  width: 100%;
 }
 
 body {
