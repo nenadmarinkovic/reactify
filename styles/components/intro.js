@@ -59,6 +59,7 @@ export const FlexItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 
   @media (max-width: 768px) {
     margin-bottom: 30px;
@@ -71,7 +72,7 @@ export const CountText = styled.div`
   line-height: 1.5;
   font-family: "Studio-Feixen-Sans Regular";
   color: ${({ theme }) => theme.mainText};
-  width: 80%;
+  width: 55%;
 
   @media (max-width: 768px) {
     width: 100%;

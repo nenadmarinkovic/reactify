@@ -1,11 +1,21 @@
 Web directory for design, data, APIs.
 <br>
 <br>
-Reactify is a collection of useful web patterns, resources, tools and technologies that help developers and designers in their mission to make the web a better and more beautiful place.
+Reactify is a collection of useful web resources, tools and technologies that help developers and designers in their mission to make the web a faster and more beautiful place using React framework.
 
 ## Getting Started
 
-First, run the development server:
+Check if Node version is set to 14.
+
+Check if .env file is present with all access tokens.
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev

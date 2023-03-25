@@ -7,20 +7,20 @@ export const BannerContainer = styled.div`
 `;
 
 export const BannerWrap = styled.div`
-  padding-top: 180px;
-  padding-bottom: 80px;
+  padding-top: 220px;
+  padding-bottom: 120px;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 320px;
+  margin: 0 380px;
 
-  @media (min-width: 1580px) {
-    padding-top: 180px;
+  /* @media (min-width: 1580px) {
+    padding-top: 220px;
   }
 
   @media (max-width: 680px) {
     padding-top: 140px;
-  }
+  } */
 `;
 
 export const BannerTextWrap = styled.div`

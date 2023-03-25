@@ -1053,7 +1053,7 @@ span.token.class-name {
   position: absolute;
   z-index: 0;
   right: 0;
-  bottom: -62%;
+  bottom: -55%;
 }
 
 .point {
