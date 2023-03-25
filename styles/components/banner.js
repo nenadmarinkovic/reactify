@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.bannerBackground};
   border-bottom: 5px solid ${({ theme }) => theme.additionalBorder};
+  transition: all 0.25s linear;
 `;
 
 export const BannerWrap = styled.div`
