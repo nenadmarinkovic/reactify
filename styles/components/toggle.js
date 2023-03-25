@@ -6,7 +6,7 @@ export const ToggleButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  padding: 5px 10px;
+  padding: 10px;
   margin-bottom: 7px;
 
   @media (max-width: 680px) {

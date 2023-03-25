@@ -44,16 +44,17 @@ export const HeaderLinks = styled.div`
 
 export const HeaderLink = styled.div`
   margin-right: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
   color: ${({ theme }) => theme.mainText};
 
   a {
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
     color: ${({ theme }) => theme.mainText};
-  }
+    padding: 0.75rem;
 
-  :hover {
-    background: ${({ theme }) => theme.switchHover};
+    :hover {
+      background: ${({ theme }) => theme.switchHover};
+    }
   }
 `;
