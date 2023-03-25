@@ -30,8 +30,6 @@ export default function Home({ items }) {
     return <div />;
   }
 
-  console.log(items);
-
   return (
     <>
       <ThemeProvider theme={themeMode}>
