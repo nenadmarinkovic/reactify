@@ -1058,12 +1058,9 @@ span.token.class-name {
   bottom: -55%;
   overflow: hidden;
 
-  /* @media (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-    bottom: -15%;
-   
-  } */
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .point {
