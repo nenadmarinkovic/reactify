@@ -17,7 +17,7 @@ export const lightTheme = {
   spanToken: "#07933f",
   buttonText: "#fff",
   reactAnimationColor: "#F7F7F7",
-  additionalBorder: '#F7F7F7'
+  additionalBorder: "#F7F7F7",
 };
 
 export const darkTheme = {
@@ -40,5 +40,5 @@ export const darkTheme = {
   spanToken: "#08d55a",
   buttonText: "#000",
   reactAnimationColor: "#2c2c2c",
-  additionalBorder: '#2c2c2c'
+  additionalBorder: "#2c2c2c",
 };

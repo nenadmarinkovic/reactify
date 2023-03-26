@@ -4,7 +4,7 @@ export const ApisContainer = styled.div`
   text-align: center;
   padding: 20px 0;
   padding-top: 80px;
-  background-color: #193AE5;
+  background-color: #193ae5;
 
   @media (max-width: 560px) {
     padding-top: 30px;

@@ -9,8 +9,7 @@ import Footer from "../components/footer";
 
 const banner = {
   title: "Data",
-  text:
-    "Commonly used headless CMS that makes content accessible via a REST or GraphQL API. With real data fetching for testing speed, UI/UX design, developer's experience, and general usability.",
+  text: "Commonly used headless CMS that makes content accessible via a REST or GraphQL API. With real data fetching for testing speed, UI/UX design, developer's experience, and general usability.",
 };
 
 export default function Home({ items }) {

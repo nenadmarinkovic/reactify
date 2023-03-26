@@ -13,7 +13,7 @@ export const Copyright = styled.div`
   a {
     margin-left: 5px;
     color: ${({ theme }) => theme.mainText};
-    
+
     :hover {
       color: ${({ theme }) => theme.helperText};
     }

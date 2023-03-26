@@ -54,7 +54,7 @@ export default function Home({ items, error, data }) {
         <Intro />
         <Design items={items.allItems} />
         <Data globalTheme={theme} />
-          {error && <p>{error}</p>}
+        {error && <p>{error}</p>}
         <Apis data={data} />
         <Footer />
       </ThemeProvider>

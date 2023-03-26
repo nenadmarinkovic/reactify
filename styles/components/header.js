@@ -20,6 +20,7 @@ export const Logo = styled.div`
   display: flex;
   align-items: center;
 `;
+
 export const LogoName = styled.div`
   font-family: "Studio-Feixen-Sans Bold";
   margin-left: 5px;

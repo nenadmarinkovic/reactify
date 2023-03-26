@@ -4,7 +4,7 @@ import { GlobalStyles } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
-import AboutContainer from "../components/about-container"
+import AboutContainer from "../components/about-container";
 import Footer from "../components/footer";
 
 const banner = {

@@ -11,8 +11,7 @@ import { GraphQLClient } from "graphql-request";
 
 const banner = {
   title: "GraphCMS",
-  text:
-    "GraphCMS gives you instant GraphQL Content APIs to create, enrich, unify, and deliver your content across platforms.",
+  text: "GraphCMS gives you instant GraphQL Content APIs to create, enrich, unify, and deliver your content across platforms.",
   link: "https://app.graphcms.com",
 };
 
