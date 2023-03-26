@@ -4,7 +4,6 @@ export const HeaderWrap = styled.div`
   position: fixed;
   width: 100%;
   background: ${({ theme }) => theme.background};
-  height: 80px;
   z-index: 3;
   border-bottom: 1px solid ${({ theme }) => theme.additionalBorder};
 `;
@@ -13,7 +12,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
   width: 100%;
 `;
 
