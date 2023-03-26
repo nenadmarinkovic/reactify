@@ -24,6 +24,7 @@ export const BannerWrap = styled.div`
 
   @media (max-width: 960px) {
     margin: 0 80px;
+    padding-top: 120px;
   }
 
   @media (max-width: 480px) {

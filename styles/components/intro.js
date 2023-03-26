@@ -62,6 +62,10 @@ export const FlexItem = styled.div`
   align-items: center;
   width: 80%;
 
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     margin-bottom: 30px;
   }
