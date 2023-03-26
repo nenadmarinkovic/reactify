@@ -16,6 +16,10 @@ export const TechContainer = styled.div`
   @media (max-width: 1080px) {
     flex-wrap: wrap;
   }
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const Logo = styled.img`

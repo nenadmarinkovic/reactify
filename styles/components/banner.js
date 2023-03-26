@@ -15,20 +15,24 @@ export const BannerWrap = styled.div`
   margin: 0 380px;
 
   @media (max-width: 1572px) {
-    margin: 0 100px;
+    margin: 0 140px;
   }
 
   @media (max-width: 1280px) {
-    margin: 0 180px;
+    margin: 0 120px;
   }
 
   @media (max-width: 960px) {
-    margin: 0 80px;
-    padding-top: 120px;
+    margin: 0 100px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
   }
 
   @media (max-width: 480px) {
     margin: 0;
+    padding: 120px 0 60px 0;
   }
 `;
 
