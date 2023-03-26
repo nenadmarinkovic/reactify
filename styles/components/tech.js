@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TechWrap = styled.div`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.lightBackground};
   padding: 60px 0 20px;
   position: relative;
   z-index: 1;

@@ -1,18 +1,19 @@
 export const lightTheme = {
   background: "#fff",
+  lightBackground: "#F7F7F7",
   switchBackground: "transparent",
   switchShadow:
     "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 2px",
   switchHover: "rgba(176, 176, 176, 0.2)",
   mainText: "#000",
-  helperText: "#0050ff",
+  helperText: "#193AE5",
   reversedText: "#FFF",
   introBackground: "#fff",
   designBackground: "#fff",
   itemBackground: "#fff",
   borderHover: "1px solid rgba(0, 0, 0, 0.2)",
-  activeButtonBorder: "2px solid #0050ff",
-  activeButtonColor: "#0050ff",
+  activeButtonBorder: "2px solid #193AE5",
+  activeButtonColor: "#193AE5",
   spanToken: "#07933f",
   buttonText: "#fff",
   reactAnimationColor: "#F7F7F7",
@@ -21,6 +22,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   background: "#000",
+  lightBackground: "#000",
   switchShadow:
     "rgba(0, 0, 0, 0.5) 0px 1px 2px, rgb(251, 251, 251) 0px 0px 0px 2px",
   switchHover: "rgba(255, 255, 255, 0.15)",

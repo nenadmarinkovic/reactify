@@ -33,10 +33,11 @@ export const IntroDesign = styled.div`
 `;
 
 export const Wrap = styled.div`
-  background: ${({ theme }) => theme.introBackground};
+  background: ${({ theme }) => theme.lightBackground};
   padding-bottom: 100px;
   position: relative;
   z-index: 1;
+  background: ;
 
   @media (max-width: 560px) {
     padding-bottom: 30px;
