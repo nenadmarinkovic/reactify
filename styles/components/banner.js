@@ -14,13 +14,21 @@ export const BannerWrap = styled.div`
   text-align: center;
   margin: 0 380px;
 
-  /* @media (min-width: 1580px) {
-    padding-top: 220px;
+  @media (max-width: 1572px) {
+    margin: 0 100px;
   }
 
-  @media (max-width: 680px) {
-    padding-top: 140px;
-  } */
+  @media (max-width: 1280px) {
+    margin: 0 180px;
+  }
+
+  @media (max-width: 960px) {
+    margin: 0 80px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0;
+  }
 `;
 
 export const BannerTextWrap = styled.div`

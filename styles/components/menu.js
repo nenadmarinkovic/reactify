@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  background: #193ae5;
+  background: #F7F7F7;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   height: 65vh;
   text-align: left;
@@ -18,13 +18,13 @@ export const StyledMenu = styled.nav`
 `;
 
 export const MenuItem = styled.div`
-  color: white;
+  color: #000;
   margin-top: 20px;
   cursor: pointer;
   font-size: 18px;
 
   a {
-    color: white;
+    color: #000;
   }
 `;
 
@@ -58,16 +58,16 @@ export const StyledBurger = styled.button`
 
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-      background: ${({ open, theme }) => (open ? "white" : theme.mainText)};
+      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
     }
     :nth-child(2) {
       opacity: ${({ open }) => (open ? "0" : "1")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-      background: ${({ open, theme }) => (open ? "white" : theme.mainText)};
+      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
     }
     :nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-      background: ${({ open, theme }) => (open ? "white" : theme.mainText)};
+      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
     }
   }
 `;
