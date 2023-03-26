@@ -1056,6 +1056,14 @@ span.token.class-name {
   z-index: 0;
   right: 0;
   bottom: -55%;
+  overflow: hidden;
+
+  /* @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+    bottom: -15%;
+   
+  } */
 }
 
 .point {
