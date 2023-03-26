@@ -12,13 +12,14 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding: 12px 0 5px 0;
   width: 100%;
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
+  padding-bottom: 7px;
 `;
 
 export const LogoName = styled.div`
