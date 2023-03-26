@@ -7,7 +7,6 @@ export const ToggleButton = styled.button`
   cursor: pointer;
   transition: 0.3s;
   padding: 10px;
-  margin-bottom: 7px;
 
   @media (max-width: 680px) {
     margin-right: 10px;

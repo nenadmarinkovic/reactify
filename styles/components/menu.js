@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  background: #F7F7F7;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   height: 65vh;
   text-align: left;
@@ -15,16 +14,18 @@ export const StyledMenu = styled.nav`
   align-items: center;
   z-index: 9;
   border-bottom-left-radius: 10px;
+  background: ${({ theme }) => theme.lightBackground};
+  border: 1px solid ${({ theme }) => theme.additionalBorder};
 `;
 
 export const MenuItem = styled.div`
-  color: #000;
+   color: ${({ theme }) => theme.mainText};
   margin-top: 20px;
   cursor: pointer;
   font-size: 18px;
 
   a {
-    color: #000;
+    color: ${({ theme }) => theme.mainText};
   }
 `;
 
@@ -32,23 +33,22 @@ export const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   position: relative;
   z-index: 10;
-  top: -4px;
 
   @media (min-width: 680px) {
     display: none;
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.5rem;
+    height: 0.15rem;
     background: ${({ theme }) => theme.mainText};
     border-radius: 10px;
     transition: all 0.3s linear;
@@ -58,16 +58,16 @@ export const StyledBurger = styled.button`
 
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
+      background: ${({ open, theme }) => (open ?? theme.mainText)};
     }
     :nth-child(2) {
       opacity: ${({ open }) => (open ? "0" : "1")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
+      background: ${({ open, theme }) => (open ?? theme.mainText)};
     }
     :nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-      background: ${({ open, theme }) => (open ? "#000" : theme.mainText)};
+      background: ${({ open, theme }) => (open ?? theme.mainText)};
     }
   }
 `;
