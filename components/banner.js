@@ -17,13 +17,11 @@ function Banner({ theme, toggleTheme }) {
       <div className="container">
         <BannerWrap>
           <BannerTextWrap>
-            <BannerTextTitle>
-              Data, design, and APIs for React
-            </BannerTextTitle>
+            <BannerTextTitle>Design, data, and APIs for React</BannerTextTitle>
             <BannerTextWrapParagraph>
-              Reactify is a collection of useful web patterns, resources, tools
-              and technologies that help developers and designers in their
-              mission to make the web a better and more beautiful place.
+              Reactify is a collection of web resources and testing playground
+              that help developers and designers in their mission to make the
+              web a faster and more beautiful place using React framework.
             </BannerTextWrapParagraph>
             <BannerTextButton>
               <Link

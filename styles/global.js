@@ -932,6 +932,7 @@ span.token.class-name {
   position: relative;
   width: 100%;
 }
+
 .ct-major-tenth:before {
   display: block;
   float: left;
@@ -1055,7 +1056,7 @@ span.token.class-name {
   position: absolute;
   z-index: 0;
   right: 0;
-  bottom: -55%;
+  bottom: -53%;
   overflow: hidden;
 
   @media (max-width: 768px) {
