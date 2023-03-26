@@ -35,6 +35,7 @@ export const ApisTitle = styled.div`
 
   @media (max-width: 560px) {
     font-size: 2.525rem;
+    padding: 80px 0 60px 0;
   }
 `;
 
