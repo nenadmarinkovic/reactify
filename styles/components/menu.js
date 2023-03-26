@@ -15,7 +15,8 @@ export const StyledMenu = styled.nav`
   z-index: 9;
   border-bottom-left-radius: 10px;
   background: ${({ theme }) => theme.lightBackground};
-  border: 1px solid ${({ theme }) => theme.additionalBorder};
+  border: ${({ theme }) => theme.borderHover};
+  border-top: 0;
 `;
 
 export const MenuItem = styled.div`
