@@ -15,7 +15,7 @@ export const BannerWrap = styled.div`
   margin: 0 380px;
 
   @media (max-width: 1572px) {
-    margin: 0 140px;
+    margin: 0 180px;
   }
 
   @media (max-width: 1280px) {
