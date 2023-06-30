@@ -15,6 +15,7 @@ export const Image = styled.div`
 export const ContainerFlex = styled.div`
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20%;
 
   @media (max-width: 768px) {
     flex-direction: column;

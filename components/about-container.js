@@ -14,15 +14,16 @@ function AboutContainer() {
         <ContainerFlex>
           <Text>
             <p>
-            Reactify is an open-source collection of useful design
-              resources handpicked around the web, a place for testing different
-              content management systems around Next.js and React ecosystem, and
-              a playground for trying out different APIs.
+              Reactify is the ultimate destination for React developers and
+              designers, providing a comprehensive suite of services. Access a
+              wide range of design resources, leverage the power of tested
+              headless CMSs, and foster seamless collaboration through efficient
+              APIs.
             </p>
             <p>
-              Reactify helps developers and designers find the best tools
-              and technologies for their job. As such, the purpose of the
-              project is to make the web a better and more beautiful place.
+              Reactify helps developers and designers find the best tools and
+              technologies for their job. As such, the purpose of the project is
+              to make the web a better and more beautiful place.
             </p>
             <p>
               The creator of Reactify is{" "}

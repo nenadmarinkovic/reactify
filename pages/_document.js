@@ -1,23 +1,49 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
+class Doc extends Document {
+  static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
-    const page = renderPage(
-      (App) => (props) => sheet.collectStyles(<App {...props} />)
-    );
+    const originalRenderPage = ctx.renderPage;
 
-    const styleTags = sheet.getStyleElement();
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
-    return { ...page, styleTags };
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {
     return (
-      <Html>
-        <Head>{this.props.styleTags}</Head>
+      <Html lang="en">
+        <Head>
+          <meta name="description" content="Web development and design" />
+          <meta content="#fff" name="theme-color" />
+          <link href="/images/favicon.ico" rel="shortcut icon" />
+          <link href="/manifest.json" rel="manifest" />
+          <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
+        </Head>
         <body>
           <Main />
           <NextScript />
@@ -26,3 +52,5 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+export default Doc;
