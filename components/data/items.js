@@ -56,7 +56,7 @@ function Items({ theme }) {
             </Item>
           </Link>
 
-          <Link href="data/graphcms">
+          <Link href="data/graphcms" passHref>
             <Item>
               <Logo
                 className="logo-data-big"

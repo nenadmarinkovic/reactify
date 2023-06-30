@@ -13,7 +13,7 @@ const queryPosts = `*[_type == "post"]`;
 const banner = {
   title: "Sanity",
   text: "Highly versatile and adaptable platform for structured content.",
-  link: "https://sanity.dot.directory",
+  link: "https://sanity.reactify.org",
 };
 
 const stats = {
@@ -24,7 +24,7 @@ const stats = {
   usability: 10,
 };
 
-export default function Sanity({ posts }) {
+export default function Sanity() {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -50,20 +50,9 @@ export default function Sanity({ posts }) {
           banner={banner}
           stats={stats}
         />
-        <Posts sanity={posts} title={banner.title} />
+        <Posts title={banner.title} />
         <Footer />
       </ThemeProvider>
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  const posts = await client.fetch(queryPosts);
-
-  return {
-    props: {
-      posts: posts || null,
-    },
-    revalidate: 10,
-  };
-};
