@@ -118,6 +118,8 @@ a {
   text-align: center;
   display: block;
   padding-bottom: 30%;
+  color: ${({ theme }) => theme.mainText};
+  transition: all .3s;
 
   @media (max-width: 768px) {
     padding: 0;
