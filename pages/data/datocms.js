@@ -23,7 +23,7 @@ const TEST_ITEMS_QUERY = `{
 const banner = {
   title: "DatoCMS",
   text: "The API-based CMS with a customizable interface.",
-  link: "https://datocms.dot.directory",
+  link: "https://datocms.reactify.org",
 };
 
 const stats = {
@@ -47,7 +47,7 @@ export default function DatoCMS({ items }) {
       <ThemeProvider theme={themeMode}>
         <GlobalStyles />
         <Head>
-          <title>Dot | {banner.title}</title>
+          <title>Reactify | {banner.title}</title>
           <meta
             name="description"
             content="Web directory for design, data, APIs."

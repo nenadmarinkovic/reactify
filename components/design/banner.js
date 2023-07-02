@@ -22,7 +22,7 @@ function Banner({ theme, toggleTheme }) {
               List of design resources for developers, handpicked from various
               online sources and collected in personal{" "}
               <a
-                href="https://datocms.dot.directory"
+                href="https://datocms.reactify.org"
                 target="_blank"
                 rel="noreferrer"
               >

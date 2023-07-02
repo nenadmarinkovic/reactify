@@ -114,6 +114,16 @@ a {
   }
 }
 
+.no-data {
+  text-align: center;
+  display: block;
+  padding-bottom: 30%;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
 .scroll-to-intro {
   @media (max-width: 768px) {
     height: 20px;

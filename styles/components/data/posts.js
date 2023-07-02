@@ -9,7 +9,7 @@ export const PostsFlex = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 60px 0 180px 0;
+  padding: 60px 0 20px 0;
 
   @media (max-width: 720px) {
     flex-direction: column;

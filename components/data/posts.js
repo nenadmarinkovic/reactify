@@ -1,6 +1,5 @@
 import React from "react";
-import sanityClient from "../../lib/sanity";
-import BlockContent from "@sanity/block-content-to-react";
+// import sanityClient from "../../lib/sanity";
 import {
   PostsContainer,
   PostsFlex,
@@ -9,13 +8,13 @@ import {
   PostTitle,
   Centered,
 } from "../../styles/components/data/posts";
-import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
 
-const builder = imageUrlBuilder(sanityClient);
+// const builder = imageUrlBuilder(sanityClient);
 
-function urlFor(source) {
-  return builder.image(source);
-}
+// function urlFor(source) {
+//   return builder.image(source);
+// }
 
 function Posts({ title, contentful, datocms, sanity, graphcms }) {
   return (
@@ -24,7 +23,8 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
         <Centered>
           Item model with title, description, and image field
           <br></br>
-          dynamically fetched from {title}:
+          dynamically fetched from {title}.
+        
         </Centered>
         <PostsFlex>
           {datocms?.map((item) => (
@@ -53,6 +53,7 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
           ))}
 
           {sanity?.map((item) => (
+            item.length ?
             <PostItem key={item._id}>
               {item.mainImage && (
                 <PostImage src={urlFor(item.mainImage).url()} />
@@ -63,7 +64,8 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
                 imageOptions={{ w: 300, h: 240, fit: "max" }}
                 {...sanityClient.config()}
               />
-            </PostItem>
+            </PostItem> :
+            <span key={item._id}>Error occured while fetching data.</span>
           ))}
         </PostsFlex>
       </div>
