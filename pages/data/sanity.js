@@ -3,12 +3,12 @@ import Banner from "../../components/data/cms-banner";
 import { GlobalStyles } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
-import client from "../../lib/sanity";
+// import client from "../../lib/sanity";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Posts from "../../components/data/posts";
 import Footer from "../../components/footer";
 
-const queryPosts = `*[_type == "post"]`;
+// const queryPosts = `*[_type == "post"]`;
 
 const banner = {
   title: "Sanity",

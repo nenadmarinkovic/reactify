@@ -8,7 +8,6 @@ import {
   PostTitle,
   Centered,
 } from "../../styles/components/data/posts";
-import BlockContent from "@sanity/block-content-to-react";
 
 // const builder = imageUrlBuilder(sanityClient);
 
@@ -53,7 +52,6 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
           ))}
 
           {sanity?.map((item) => (
-            item.length ?
             <PostItem key={item._id}>
               {item.mainImage && (
                 <PostImage src={urlFor(item.mainImage).url()} />
@@ -64,8 +62,7 @@ function Posts({ title, contentful, datocms, sanity, graphcms }) {
                 imageOptions={{ w: 300, h: 240, fit: "max" }}
                 {...sanityClient.config()}
               />
-            </PostItem> :
-            <span key={item._id}>Error occured while fetching data.</span>
+            </PostItem>
           ))}
         </PostsFlex>
       </div>
