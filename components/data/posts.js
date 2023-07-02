@@ -8,6 +8,7 @@ import {
   PostTitle,
   Centered,
 } from "../../styles/components/data/posts";
+import BlockContent from "@sanity/block-content-to-react";
 
 // const builder = imageUrlBuilder(sanityClient);
 
