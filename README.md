@@ -5,7 +5,7 @@ Reactify is a collection of useful web resources, tools and technologies that he
 
 ## Getting Started
 
-Check if Node version is set to 14.
+Check if Node version is set to 14 or 16.
 
 Check if .env file is present with all access tokens.
 

@@ -20,16 +20,7 @@ function Banner({ theme, toggleTheme }) {
             <BannerTextTitle>Design</BannerTextTitle>
             <BannerTextWrapParagraph>
               List of design resources for developers, handpicked from various
-              online sources and collected in personal{" "}
-              <a
-                href="https://datocms.reactify.org"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                DatoCMS
-              </a>{" "}
-              back-end.
+              online sources.
             </BannerTextWrapParagraph>
           </BannerTextWrap>
         </BannerWrap>
