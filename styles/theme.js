@@ -35,7 +35,7 @@ export const darkTheme = {
   itemBackground: "#000",
   designBackground: "#000",
   borderHover: "1px solid rgba(255, 255, 255, 0.3)",
-  activeButtonBorder: "2px solid #08d55a",
+  activeButtonBorder: "2px solid #DDF30F",
   activeButtonColor: "#DDF30F",
   spanToken: "##DDF30F",
   buttonText: "#000",
